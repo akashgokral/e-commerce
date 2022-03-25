@@ -14,13 +14,21 @@ a.nav-link.active {
     text-decoration: underline;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+
 
 @media screen and (max-width:760px) {
     li.nav-item {
         width: 100%;
         display: flex;
         justify-content: center;
-        border-bottom: 1px solid grey;
+
     }
 
     .navbar-nav .nav-link:hover {
@@ -32,6 +40,14 @@ a.nav-link.active {
     a.nav-link.active {
         color: red !important;
         font-weight: bolder;
+    }
+
+
+    .main_nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 10px;
+        align-items: center;
     }
 
 

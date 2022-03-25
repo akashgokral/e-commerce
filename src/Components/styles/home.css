@@ -1,0 +1,14 @@
+.card_group {
+    display: flex;
+    margin-top: 35px;
+
+}
+
+@media screen and (max-width:900px) {
+    .card_group {
+        flex-direction: column;
+        margin: 0 !important;
+
+
+    }
+}

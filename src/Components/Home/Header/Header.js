@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaUserAlt, FaBriefcase, FaSearch } from "react-icons/fa";
 import "../../styles/header.css"
-import Logo from './Logo';
 import Nav from './Nav';
 import Background from './Background';
 
@@ -22,7 +21,6 @@ const Header = () => {
                 </div>
 
             </div>
-            <Logo />
             <Nav />
             <Background />
         </>

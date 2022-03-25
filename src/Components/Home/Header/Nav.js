@@ -1,13 +1,17 @@
 import React from 'react'
 import "../../styles/nav.css"
+import logo from "../../../Images/Web/iSHOP Logo.svg"
+
 
 const Nav = () => {
     return (
         <>
 
 
-            <nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-center  ">
-                <div className="container justify-content-end">
+            <nav className="navbar navbar-expand-lg navbar-light  sticky-top bg-light">
+
+                <div className="container d-flex flex-lg-column justify-content-between align-items-center">
+                    <div className='logo'><img src={logo}></img></div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

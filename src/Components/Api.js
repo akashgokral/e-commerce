@@ -18,6 +18,9 @@ import access9 from "../Images/Products/access9.png"
 import access10 from "../Images/Products/access10.png"
 import access11 from "../Images/Products/access11.png"
 import access12 from "../Images/Products/access12.jpg"
+import free_shipping from "../Images/Web/shipping.svg"
+import free_refund from "../Images/Web/refund.svg"
+import support from "../Images/Web/support.svg"
 
 
 
@@ -53,6 +56,18 @@ const products = [
         id: 8, imgurl: access3, title: "airpods-max-hero", price: 8999, cat: 'accessories'
     },
     {
+        id: 19, imgurl: macbook2, title: "Apple Mac Mini", price: 75000, cat: 'macbook'
+    },
+    {
+        id: 20, imgurl: macbook3, title: "Apple Macbook", price: 89999, cat: 'macbook'
+    }
+
+
+]
+
+
+export const products_1 = [
+    {
         id: 9, imgurl: access4, title: "MY812", price: 4999, cat: 'accessories'
     },
 
@@ -86,16 +101,21 @@ const products = [
         id: 17, imgurl: access12, title: "apple_airpods", price: 1599, cat: 'accessories'
     },
 
-
     {
         id: 18, imgurl: macbook1, title: "Macbook Air", price: 85599, cat: 'macbook'
-    },
-    {
-        id: 19, imgurl: macbook2, title: "Apple Mac Mini", price: 75000, cat: 'macbook'
-    },
+    }
 
+]
+
+export const section_3 = [
     {
-        id: 20, imgurl: macbook3, title: "Apple Macbook", price: 89999, cat: 'macbook'
+        id: 21, imgurl: free_shipping, title: "Free Shipping", content: "Most retailers promote free delivery with a minimum spend, in order to encourage customers to increase their order cost. However, Next is one of the few retailers that promotes it after the customer has checked out. Here, the retailer informs shoppers that they can qualify for free delivery if they buy something else within 30 minutes, perhaps making them re-think if there’s any items they’ve missed…"
+    },
+    {
+        id: 22, imgurl: free_refund, title: "100% Free Refund", content: "Most retailers promote free delivery with a minimum spend, in order to encourage customers to increase their order cost. However, Next is one of the few retailers that promotes it after the customer has checked out. Here, the retailer informs shoppers that they can qualify for free delivery if they buy something else within 30 minutes, perhaps making them re-think if there’s any items they’ve missed…"
+    },
+    {
+        id: 23, imgurl: support, title: "Support 24/7", content: "Most retailers promote free delivery with a minimum spend, in order to encourage customers to increase their order cost. However, Next is one of the few retailers that promotes it after the customer has checked out. Here, the retailer informs shoppers that they can qualify for free delivery if they buy something else within 30 minutes, perhaps making them re-think if there’s any items they’ve missed…"
     }
 ]
 
