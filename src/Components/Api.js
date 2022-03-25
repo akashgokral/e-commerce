@@ -86,6 +86,7 @@ const products = [
         id: 17, imgurl: access12, title: "apple_airpods", price: 1599, cat: 'accessories'
     },
 
+
     {
         id: 18, imgurl: macbook1, title: "Macbook Air", price: 85599, cat: 'macbook'
     },

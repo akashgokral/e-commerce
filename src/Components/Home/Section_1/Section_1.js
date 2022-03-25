@@ -48,7 +48,7 @@ const Section_1 = () => {
 
     return (
         <>
-            <div className='container my-5 py-5'>
+            <div className='container my-2 py-5'>
                 <div className='row'>
                     <div className='col-12 mb-5'>
                         <h1 className='display-6 fw-bolder text-center'>BEST SELLER</h1><hr />
