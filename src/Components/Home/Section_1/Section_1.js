@@ -48,7 +48,7 @@ const Section_1 = () => {
                         )
                     })
                 }
-}
+
 
 
         
@@ -70,7 +70,7 @@ const Section_1 = () => {
 
             </>
         )
-    
+    }
 
     return (
         <>
