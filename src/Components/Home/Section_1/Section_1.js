@@ -4,6 +4,7 @@ import { useState } from 'react';
 import products from "../../Api"
 import "../../styles/section_1.css"
 import { products_1 } from '../../Api';
+import Card from './Card';
 
 const Section_1 = () => {
     const [data, setData] = useState(products);
@@ -22,57 +23,34 @@ const Section_1 = () => {
     const ShowProducts = () => {
 
         const Load = () => {
-            {
-                data_1.map((products_1) => {
-                    return (
-                        <>
-                            <div className='col-md-3 mb-4'>
-                                <div className="card h-100 text-center p-4 " key={products_1.id}>
-                                    <img src={products_1.imgurl} className="card-img-top" alt={products_1.title} height="180px"></img>
-                                    <div className="card-body">
-                                        <h5 className="card-title mb-0">{products_1.title}...</h5>
-                                        <p className="card-text fw-bold m-2">${products_1.price}</p>
-                                        <a href="#" className="btn btn-outline-dark  m-2">Buy Now</a>
-                                    </div>
-                                </div>
 
-
-                            </div>
-
-                        </>
-                    )
-                })
-            }
         }
 
 
 
         return (
             <>
-                <div className='buttons d-flex justify-content-center mb-5 pb-5 '>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => setData(products)}>All</button>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("macbook")}>Mac</button>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("iphone")}>iPhone</button>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("ipad")}>iPad</button>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("accessories")}>Accessories</button>
+                <div className='buttons d-flex justify-content-center mb-0 pb-3 '>
+                    <button className='btn btn-outline-none nav-link active  fs-5 filter-btn' onClick={() => setData(products)}>All</button>
+                    <button className='btn btn-outline-none me-1 fs-5' onClick={() => filterProduct("macbook")}>Mac</button>
+                    <button className='btn btn-outline-none me-1 fs-5' onClick={() => filterProduct("iphone")}>iPhone</button>
+                    <button className='btn btn-outline-none me-1 fs-5' onClick={() => filterProduct("ipad")}>iPad</button>
+                    <button className='btn btn-outline-none me-1 fs-5' onClick={() => filterProduct("accessories")}>Accessories</button>
                 </div>
                 {
                     data.map((products) => {
                         return (
                             <>
-                                <div className='col-md-3 mb-4'>
-                                    <div className="card h-100 text-center p-4 " key={products.id}>
-                                        <span className="badge bg-danger mx-2">Hot</span>
-                                        <img src={products.imgurl} className="card-img-top" alt={products.title} height="180px"></img>
-                                        <div className="card-body ">
-                                            <h5 className="card-title mb-0">{products.title}...</h5>
-                                            <p className="card-text fw-bold m-2">${products.price}</p>
-                                            <a href="#" className="btn btn-outline-dark  m-2">Buy Now</a>
-                                        </div>
-                                    </div>
-
-
-                                </div>
+                                <Card key={products.id} title={products.title} imgurl={products.imgurl} price={products.price} />
+                            </>
+                        )
+                    })
+                }
+                {
+                    data_1.map((products_1) => {
+                        return (
+                            <>
+                                <Card key={products_1.id} title={products_1.title} imgurl={products_1.imgurl} price={products_1.price} />
 
                             </>
                         )
@@ -82,7 +60,9 @@ const Section_1 = () => {
 
 
 
-                <button type="button" className="btn btn-link" onClick={console.log(Load)}>Load More</button>
+
+
+                <button type="button" className="btn btn-link" onClick={Load}>Load More</button>
 
 
 

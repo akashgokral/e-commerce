@@ -5,7 +5,14 @@ button.btn:hover {
 
 }
 
+.filter-btn {
+    padding: 0 5px;
+}
 
+.nav-link.active {
+    color: red !important;
+    text-decoration: underline;
+}
 
 .btn:focus {
     box-shadow: none;
