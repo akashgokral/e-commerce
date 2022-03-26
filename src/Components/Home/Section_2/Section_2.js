@@ -1,5 +1,4 @@
 import React from 'react'
-
 import "../../styles/section_2.css"
 import section_2_bg_image from "../../../Images/miscellaneous/2_corousel.png"
 
