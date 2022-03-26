@@ -20,6 +20,8 @@ const Section_1 = () => {
 
 
     const ShowProducts = () => {
+       return (
+          <>
 
         const Load = () => {
             {
@@ -45,10 +47,6 @@ const Section_1 = () => {
             }
         }
 
-
-
-        return (
-            <>
                 <div className='buttons d-flex justify-content-center mb-5 pb-5 '>
                     <button className='btn btn-outline-none me-2 fs-5' onClick={() => setData(products)}>All</button>
                     <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("macbook")}>Mac</button>
@@ -82,7 +80,7 @@ const Section_1 = () => {
 
 
 
-                <button type="button" className="btn btn-link" onClick={console.log(Load)}>Load More</button>
+                <button type="button" className="btn btn-link" onClick={Load}>Load More</button>
 
 
 
