@@ -9,30 +9,34 @@ import Card from './Card';
 const Section_1 = () => {
     const [data, setData] = useState(products);
     const [data_1, setData_1] = useState(products_1);
-     const [load, setLoad] = useState(false);
+    const [load, setLoad] = useState(false);
 
     const filterProduct = (cat) => {
         const updatedList = products.filter((x) => x.cat === cat);
-
+        const updatedList2 = products_1.filter((x) => x.cat === cat);
         setData(updatedList);
-        console.log(updatedList)
+        setData_1(updatedList2);
+
+
+
+
     }
 
-        const Load = () => {
+    const Load = () => {
 
-         setLoad(true);
-     }
+        setLoad(true);
+    }
 
 
     const ShowProducts = () => {
- 
-        
- 
+
+
+
 
         return (
             <>
                 <div className='buttons d-flex justify-content-center mb-2 pb-3 '>
-                    <button className='btn btn-outline-none nav-link active  fs-5 filter-btn' onClick={() => setData(products)}>All</button>
+                    <button className='btn btn-outline-none nav-link active  fs-5 filter-btn' onClick={() => { setData(products); setData_1(products_1); }}>All</button>
                     <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("macbook")}>Mac</button>
                     <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("iphone")}>iPhone</button>
                     <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("ipad")}>iPad</button>
@@ -51,9 +55,10 @@ const Section_1 = () => {
 
 
 
-        
 
-                { load &&
+
+                {
+                    load &&
                     data_1.map((products_1) => {
                         return (
                             <>
@@ -65,8 +70,10 @@ const Section_1 = () => {
                 }
 
 
-                <button type="button" className="btn btn-link" onClick={Load}>Load More</button>
-
+                <div className='btn_div justify-content-center d-flex'>
+                    {load === false ? (<button type="button" className="btn btn-link" onClick={Load}>Load More</button>)
+                        : (<button type="button" className="btn btn-link" onClick={() => { setLoad(!load) }}>Show Less</button>)}
+                </div>
 
             </>
         )
