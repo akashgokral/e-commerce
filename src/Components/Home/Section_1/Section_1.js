@@ -9,6 +9,7 @@ import Card from './Card';
 const Section_1 = () => {
     const [data, setData] = useState(products);
     const [data_1, setData_1] = useState(products_1);
+     const [load, setLoad] = useState(false);
 
     const filterProduct = (cat) => {
         const updatedList = products.filter((x) => x.cat === cat);
@@ -17,13 +18,16 @@ const Section_1 = () => {
         console.log(updatedList)
     }
 
+        const Load = () => {
 
+         setLoad(true);
+     }
 
 
     const ShowProducts = () => {
-
+ 
         
-
+ 
 
         return (
             <>
@@ -45,11 +49,11 @@ const Section_1 = () => {
                     })
                 }
 }
-const Load = () => {
+
 
         
 
-                {
+                { load &&
                     data_1.map((products_1) => {
                         return (
                             <>
@@ -66,7 +70,7 @@ const Load = () => {
 
             </>
         )
-    }
+    
 
     return (
         <>
