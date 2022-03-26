@@ -21,32 +21,21 @@ const Section_1 = () => {
 
 
     const ShowProducts = () => {
-       return (
-          <>
 
         const Load = () => {
 
         }
 
-<<<<<<< HEAD
-
 
         return (
             <>
-                <div className='buttons d-flex justify-content-center mb-0 pb-3 '>
+                <div className='buttons d-flex justify-content-center mb-2 pb-3 '>
                     <button className='btn btn-outline-none nav-link active  fs-5 filter-btn' onClick={() => setData(products)}>All</button>
-                    <button className='btn btn-outline-none me-1 fs-5' onClick={() => filterProduct("macbook")}>Mac</button>
-                    <button className='btn btn-outline-none me-1 fs-5' onClick={() => filterProduct("iphone")}>iPhone</button>
-                    <button className='btn btn-outline-none me-1 fs-5' onClick={() => filterProduct("ipad")}>iPad</button>
-                    <button className='btn btn-outline-none me-1 fs-5' onClick={() => filterProduct("accessories")}>Accessories</button>
-=======
-                <div className='buttons d-flex justify-content-center mb-5 pb-5 '>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => setData(products)}>All</button>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("macbook")}>Mac</button>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("iphone")}>iPhone</button>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("ipad")}>iPad</button>
-                    <button className='btn btn-outline-none me-2 fs-5' onClick={() => filterProduct("accessories")}>Accessories</button>
->>>>>>> 204d05d633e8011bab1570fc6e0e369a66562069
+                    <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("macbook")}>Mac</button>
+                    <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("iphone")}>iPhone</button>
+                    <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("ipad")}>iPad</button>
+                    <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("accessories")}>Accessories</button>
+
                 </div>
                 {
                     data.map((products) => {
@@ -69,18 +58,7 @@ const Section_1 = () => {
                 }
 
 
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 204d05d633e8011bab1570fc6e0e369a66562069
                 <button type="button" className="btn btn-link" onClick={Load}>Load More</button>
-
-
-
-
 
 
             </>
