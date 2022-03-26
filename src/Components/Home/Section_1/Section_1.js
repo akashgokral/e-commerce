@@ -22,9 +22,7 @@ const Section_1 = () => {
 
     const ShowProducts = () => {
 
-        const Load = () => {
-
-        }
+        
 
 
         return (
@@ -46,6 +44,11 @@ const Section_1 = () => {
                         )
                     })
                 }
+}
+const Load = () => {
+
+        
+
                 {
                     data_1.map((products_1) => {
                         return (
