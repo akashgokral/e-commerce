@@ -1,10 +1,11 @@
 import React from 'react'
-import Section_3 from '../Section 3/Section_3'
+import Section_3 from '../Home/Section 3/Section_3'
 import Header from './Header/Header'
 import Section_1 from './Section_1/Section_1'
 import Section_2 from './Section_2/Section_2'
 import { section_3 } from '../Api'
 import "../styles//home.css"
+import Section_4 from './Section_4/Section_4'
 
 const Home = () => {
     return (
@@ -23,7 +24,7 @@ const Home = () => {
 
             }
             </div>
-
+            <Section_4 />
 
         </>
     )

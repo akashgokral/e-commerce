@@ -21,7 +21,12 @@ import access12 from "../Images/Products/access12.jpg"
 import free_shipping from "../Images/Web/shipping.svg"
 import free_refund from "../Images/Web/refund.svg"
 import support from "../Images/Web/support.svg"
-
+import applewatch from "../Images/featured/applewatch.jpg"
+import iphone13pro from "../Images/featured/iphone13pro.jpg"
+import mi11 from "../Images/featured/mi 11.jpg"
+import oppowatch from "../Images/featured/oppowatch.jpg"
+import samsungs22 from "../Images/featured/samsung s22.jpg"
+import oneplus from "../Images/featured/oneplus.jpg"
 
 
 const products = [
@@ -117,6 +122,38 @@ export const section_3 = [
     {
         id: 23, imgurl: support, title: "Support 24/7", content: "Most retailers promote free delivery with a minimum spend, in order to encourage customers to increase their order cost. However, Next is one of the few retailers that promotes it after the customer has checked out. Here, the retailer informs shoppers that they can qualify for free delivery if they buy something else within 30 minutes, perhaps making them re-think if there’s any items they’ve missed…"
     }
+]
+export const featured = [
+
+    {
+        id: 24, imgurl: iphone13pro, title: "iPhone 13 Pro Max", price: 129900, cat: 'featured'
+    },
+    {
+        id: 25, imgurl: samsungs22, title: "Samsung Galaxy S22", price: 118999, cat: 'featured'
+    },
+
+    {
+        id: 26, imgurl: mi11, title: "Xiaomi Mi 11 Ultra", price: 69947, cat: 'featured'
+    }
+
+
+]
+
+export const featured_1 = [
+
+    {
+        id: 27, imgurl: applewatch, title: "Apple Watch Series 7 ", price: 53900, cat: 'featured'
+    }
+    ,
+
+    {
+        id: 28, imgurl: oppowatch, title: "OPPO  Smart Watch", price: 19990, cat: 'featured'
+    }
+    ,
+    {
+        id: 29, imgurl: oneplus, title: "OnePlus Watch ", price: 14999, cat: 'featured'
+    }
+
 ]
 
 export default products;
