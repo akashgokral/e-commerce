@@ -8,5 +8,6 @@
 @media screen and (max-width:760px) {
     .carousel_main {
         flex-direction: column;
+
     }
 }

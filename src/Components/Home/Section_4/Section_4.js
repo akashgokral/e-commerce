@@ -12,7 +12,7 @@ const Section_4 = () => {
                 <div class="carousel-inner ">
 
                     <div class="carousel-item active ">
-                        <div className='carousel_main d-flex justify-content-center'>
+                        <div className='carousel_main d-flex justify-content-center '>
                             {featured.map((feature) => {
                                 return (
                                     <>
@@ -52,7 +52,7 @@ const Section_4 = () => {
             </div>
 
 
-
+            <hr></hr>
         </>
     )
 }

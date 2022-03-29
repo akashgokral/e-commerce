@@ -6,6 +6,7 @@ import Section_2 from './Section_2/Section_2'
 import { section_3 } from '../Api'
 import "../styles//home.css"
 import Section_4 from './Section_4/Section_4'
+import Footer from './Footer'
 
 const Home = () => {
     return (
@@ -14,7 +15,7 @@ const Home = () => {
             <Section_1 />
             <Section_2 />
 
-            <div className='card_group container-fluid'>{
+            <div className='card_group container  my-2 py-5 d-flex mt-3 '>{
                 section_3.map(section3 => {
                     return (
                         <Section_3 title={section3.title} imgurl={section3.imgurl} content={section3.content} />
@@ -25,7 +26,7 @@ const Home = () => {
             }
             </div>
             <Section_4 />
-
+            <Footer />
         </>
     )
 }

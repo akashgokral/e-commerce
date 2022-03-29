@@ -1,0 +1,26 @@
+.footer {
+    margin: 0 80px;
+}
+
+h3.ishop {
+    color: #C1C8CE;
+    font-size: 33px;
+}
+
+.icons {
+    display: flex;
+    color: rgb(60, 60, 236);
+
+}
+
+.icons_twit {
+    margin-left: 35px;
+    color: lightskyblue;
+}
+
+.footer_3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 130px;
+
+}
