@@ -7,11 +7,13 @@ import { section_3 } from '../Api'
 import "../styles//home.css"
 import Section_4 from './Section_4/Section_4'
 import Footer from './Footer'
+import Background from './Header/Background'
 
 const Home = () => {
     return (
         <>
             <Header />
+            <Background />
             <Section_1 />
             <Section_2 />
 

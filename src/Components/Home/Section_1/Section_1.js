@@ -1,10 +1,10 @@
-
 import React from 'react'
 import { useState } from 'react';
 import products from "../../Api"
 import "../../styles/section_1.css"
 import { products_1 } from '../../Api';
 import Card from './Card';
+
 
 const Section_1 = () => {
     const [data, setData] = useState(products);
@@ -36,11 +36,11 @@ const Section_1 = () => {
         return (
             <>
                 <div className='buttons d-flex justify-content-center mb-2 pb-3 '>
-                    <button className='btn btn-outline-none nav-link active  fs-5 filter-btn' onClick={() => { setData(products); setData_1(products_1); }}>All</button>
-                    <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("macbook")}>Mac</button>
-                    <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("iphone")}>iPhone</button>
-                    <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("ipad")}>iPad</button>
-                    <button className='btn btn-outline-none me-1 fs-5 filter-btn' onClick={() => filterProduct("accessories")}>Accessories</button>
+                    <button className='btn btn-outline-none fs-5 filter-btn' onClick={() => { setData(products); setData_1(products_1); }}>All</button>
+                    <button className='btn btn-outline-none fs-5 filter-btn' onClick={() => filterProduct("macbook")}>Mac</button>
+                    <button className='btn btn-outline-none fs-5 filter-btn' onClick={() => filterProduct("iphone")}>iPhone</button>
+                    <button className='btn btn-outline-none fs-5 filter-btn' onClick={() => filterProduct("ipad")}>iPad</button>
+                    <button className='btn btn-outline-none fs-5 filter-btn' onClick={() => filterProduct("accessories")}>Accessories</button>
 
                 </div>
                 {

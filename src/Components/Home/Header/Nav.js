@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../styles/nav.css"
 import logo from "../../../Images/Web/iSHOP Logo.svg"
-
+import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
     return (
@@ -18,22 +18,25 @@ const Nav = () => {
                     <div className="collapse navbar-collapse " id="navbarTogglerDemo02">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
                             <li className="nav-item ">
-                                <a className="nav-link active" aria-current="page" href="#">HOME</a>
+                                <NavLink to="/" exact="true" activeclassname="active">HOME </NavLink>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link " href="#">STORE</a>
+                                <NavLink to="/store" activeclassname="active" > STORE</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">IPHONE</a>
+                                <NavLink to="/iphone" > IPHONE</NavLink>
+
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">IPAD</a>
+                                <NavLink to="/ipad" > IPAD</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">MACBOOK</a>
+                                <NavLink to="/macbook" > MACBOOK</NavLink>
+
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">ACCESSORIES</a>
+                                <NavLink to="/accessories" > ACCESSORIES</NavLink>
+
                             </li>
                         </ul>
                     </div>

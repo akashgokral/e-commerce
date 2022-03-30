@@ -1,0 +1,6 @@
+@media screen and (max-width:760px) {
+    .filter_section {
+        display: none;
+
+    }
+}

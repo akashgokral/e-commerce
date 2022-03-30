@@ -155,5 +155,109 @@ export const featured_1 = [
     }
 
 ]
+export const allproducts = [
+    {
+        id: 1, imgurl: iphone1, title: "Apple iPhone 11", price: 25999, cat: 'iphone'
+    },
+
+    {
+        id: 2, imgurl: iphone2, title: "ipod-touch", price: 23999, cat: 'iphone'
+    },
+
+    {
+        id: 3, imgurl: iphone3, title: "Apple iPhone 10", price: 20999, cat: 'iphone'
+    },
+
+    {
+        id: 4, imgurl: iphone4, title: "apple_iPod_2A", price: 45999, cat: 'iphone'
+    },
+    {
+        id: 5, imgurl: ipad, title: "Apple Ipad", price: 75999, cat: 'ipad'
+    },
+
+    {
+        id: 6, imgurl: access1, title: "Apple watch1", price: 15999, cat: 'accessories'
+    },
+
+    {
+        id: 7, imgurl: access2, title: "Apple Charger", price: 5999, cat: 'accessories'
+    },
+
+    {
+        id: 8, imgurl: access3, title: "airpods-max-hero", price: 8999, cat: 'accessories'
+    },
+
+    {
+        id: 9, imgurl: access4, title: "MY812", price: 4999, cat: 'accessories'
+    },
+
+    {
+        id: 10, imgurl: access5, title: "Apple Magic", price: 5999, cat: 'accessories'
+    },
+
+    {
+        id: 11, imgurl: access6, title: "Apple Watch 21-1", price: 5555, cat: 'accessories'
+    },
+
+    {
+        id: 12, imgurl: access7, title: "Apple Airpods", price: 1999, cat: 'accessories'
+    },
+    {
+        id: 13, imgurl: access8, title: "Apple_homepod", price: 6999, cat: 'accessories'
+    },
+
+    {
+        id: 14, imgurl: access9, title: "design-hero_2x", price: 2999, cat: 'accessories'
+    },
+
+    {
+        id: 15, imgurl: access10, title: "MQHX2", price: 2999, cat: 'accessories'
+    },
+
+    {
+        id: 16, imgurl: access11, title: "Headphone", price: 2999, cat: 'accessories'
+    },
+    {
+        id: 17, imgurl: access12, title: "apple_airpods", price: 1599, cat: 'accessories'
+    },
+
+    {
+        id: 18, imgurl: macbook1, title: "Macbook Air", price: 85599, cat: 'macbook'
+    },
+
+    {
+        id: 19, imgurl: macbook2, title: "Apple Mac Mini", price: 75000, cat: 'macbook'
+    },
+    {
+        id: 20, imgurl: macbook3, title: "Apple Macbook", price: 89999, cat: 'macbook'
+    }, {
+        id: 24, imgurl: iphone13pro, title: "iPhone 13 Pro Max", price: 129900, cat: 'featured'
+    },
+    {
+        id: 25, imgurl: samsungs22, title: "Samsung Galaxy S22", price: 118999, cat: 'featured'
+    },
+
+    {
+        id: 26, imgurl: mi11, title: "Xiaomi Mi 11 Ultra", price: 69947, cat: 'featured'
+    }
+    ,
+    {
+        id: 27, imgurl: applewatch, title: "Apple Watch Series 7 ", price: 53900, cat: 'featured'
+    }
+    ,
+
+    {
+        id: 28, imgurl: oppowatch, title: "OPPO  Smart Watch", price: 19990, cat: 'featured'
+    }
+    ,
+    {
+        id: 29, imgurl: oneplus, title: "OnePlus Watch ", price: 14999, cat: 'featured'
+    }
+
+
+
+]
+
+
 
 export default products;

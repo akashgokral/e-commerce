@@ -5,6 +5,7 @@ button.btn:hover {
 
 }
 
+
 .filter-btn {
     padding: 0 5px;
 
@@ -23,7 +24,8 @@ button.btn:hover {
 
 .card:hover {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .175);
-    border: 1px solid black
+    border: 1px solid black;
+    transition: all 0.8s ease-out;
 }
 
 .loadmore {

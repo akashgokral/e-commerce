@@ -24,3 +24,12 @@ h3.ishop {
     margin-right: 130px;
 
 }
+
+@media screen and (max-width:760px) {
+
+    .footer_2 p {
+        margin: 0;
+    }
+
+
+}
