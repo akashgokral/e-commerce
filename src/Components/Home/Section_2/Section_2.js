@@ -16,7 +16,7 @@ const Section_2 = () => {
 
                 </div>
 
-                <div className='section_2_bg_img '> <img src={section_2_bg_image}></img></div>
+                <div className='section_2_bg_img '> <img src={section_2_bg_image} className='img-fluid' /></div>
             </div>
 
 

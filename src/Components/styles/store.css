@@ -21,10 +21,3 @@
 .prices {
     background-color: #F6F7F8
 }
-
-@media screen and (max-width:760px) {
-    .filter_section {
-        display: none;
-
-    }
-}
