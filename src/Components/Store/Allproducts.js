@@ -1,9 +1,15 @@
-import React from 'react'
+
 import { allproducts } from '../Api'
 import Card from '../Home/Section_1/Card'
 
 
-const Allproducts = () => {
+const Allproducts = ({ allproducts }) => {
+
+
+
+
+
+
     return (
         <>
             <div className='container mt-5'>

@@ -6,7 +6,7 @@ import section_2_bg_image from "../../../Images/miscellaneous/2_corousel.png"
 const Section_2 = () => {
     return (
         <>
-            <div className=' section_2 '>
+            <div className='mt-3 section_2 '>
                 <div className='section_2_content container'>
 
                     <h3 className='section_2_h3'>i Phone 6 Plus</h3>
@@ -16,7 +16,7 @@ const Section_2 = () => {
 
                 </div>
 
-                <div className='section_2_bg_img '> <img src={section_2_bg_image} className='img-fluid' /></div>
+                <div className='section_2_bg_img'> <img src={section_2_bg_image} /></div>
             </div>
 
 

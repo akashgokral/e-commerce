@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Home/Header/Header'
 import Store_nav from './Store_nav'
 import Section_2 from '../Home/Section_2/Section_2'
 import Allproducts from './Allproducts'
 import Footer from "../Home/Footer"
 import '../styles/store.css'
-
+import { allproducts } from '../Api'
 
 const Store = () => {
+    const [allProducts, setAllProducts] = useState(allproducts);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [cardPerPage, setCardPerPage] = useState(8);
+
+
+    const indexofLastCard = currentPage * cardPerPage;
+    const indexofFirstCard = indexofLastCard - cardPerPage;
+    const currentCards = allProducts.slice(indexofFirstCard, indexofLastCard);
+
     return (
         <>
             <Header />
@@ -36,21 +45,28 @@ const Store = () => {
                             </div>
                             <input type="range" className='w-100 my-3' />
                         </div>
+                        <div className="brand_div py-3 px-3 mt-4">
+                            <h1>BRAND</h1>
+                            <ul className='accessories_ul'>
+                                <li>Apple </li>
+                                <li>LG</li>
+                                <li>SAMSUNG</li>
+                                <li>XIAOMI</li>
+                            </ul>
+                        </div>
+                        <div class="d-grid mx-auto mt-4">
+                            <button class="btn btn-light" type="button">More</button>
+                        </div>
                     </div>
 
                     <div className='col-lg-9'>
                         <Section_2 />
 
-                        <Allproducts />
+                        <Allproducts allproducts={currentCards} />
                     </div>
-                    <Footer />
-
-
-
-
-
 
                 </div>
+                <Footer />
             </div>
 
 

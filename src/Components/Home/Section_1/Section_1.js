@@ -6,6 +6,7 @@ import { products_1 } from '../../Api';
 import Card from './Card';
 
 
+
 const Section_1 = () => {
     const [data, setData] = useState(products);
     const [data_1, setData_1] = useState(products_1);
