@@ -10,6 +10,8 @@ const Pagination = ({ totalPosts, cardPerPage, paginate }) => {
 
 
 
+
+
     return (
         <>
             <nav className='d-flex justify-content-center'>

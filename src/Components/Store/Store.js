@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../Home/Header/Header'
 import Store_nav from './Store_nav'
 import Section_2 from '../Home/Section_2/Section_2'
@@ -17,7 +17,6 @@ const Store = () => {
     }, [])
 
 
-
     const [allProducts] = useState(allproducts);
     const [currentPage, setCurrentPage] = useState(1);
     const [cardPerPage] = useState(8);
@@ -29,6 +28,17 @@ const Store = () => {
 
     const paginate = (pagenumber) => setCurrentPage(pagenumber);
 
+    const pagenumber = [];
+
+    for (let i = 1; i <= Math.ceil(allProducts.length / cardPerPage); i++) {
+        pagenumber.push(i);
+    }
+
+    const TopSection = useRef(null);
+    const gotoTop = () => {
+        window.scrollTo({ top: TopSection.current.offsetTop })
+    }
+    console.log(gotoTop)
     return (
         <>
             <Header />
@@ -71,11 +81,27 @@ const Store = () => {
                         </div>
                     </div>
 
-                    <div className='col-lg-9'>
+                    <div className='col-lg-9'  >
                         <Section_2 />
 
-                        <Allproducts allproducts={currentCards} />
-                        <Pagination cardPerPage={cardPerPage} totalPosts={allProducts.length} paginate={paginate} />
+                        <div ref={TopSection} >   <Allproducts allproducts={currentCards} /></div>
+
+                        <nav className='d-flex justify-content-center'>
+                            <ul className="pagination d-flex">
+                                {pagenumber.map(number => (
+                                    <li className="page-item" key={number} onClick={gotoTop}>
+                                        <a onClick={() => paginate(number)} className="page-link">
+                                            {number}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+
+
+
+
+                        {/* <Pagination cardPerPage={cardPerPage} totalPosts={allProducts.length} paginate={paginate} /> */}
                     </div>
 
                 </div>

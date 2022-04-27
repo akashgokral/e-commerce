@@ -10,8 +10,8 @@ const Allproducts = ({ allproducts }) => {
 
     return (
         <>
-            <div className='container mt-5'>
-                <div className='row justify-content-center'>
+            <div className='container'>
+                <div className='row justify-content-center pt-5'>
 
                     {
                         allproducts.map((item) => {
