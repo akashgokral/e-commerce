@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({ title, id, imgurl, price }) => {
     return (
         <>
-            <div className='col-md-4 col-6 mb-4 pt-5'>
+            <div className='col-md-3 col-6 mb-4 pt-5'>
                 <div className="card h-100 w-100 text-center p-4 " key={id}>
                     <span className="badge bg-danger ">Hot</span>
                     <div className='card_img_div mt-3'>     <img src={imgurl} className="card-img-top img-fluid" alt={title} ></img></div>
