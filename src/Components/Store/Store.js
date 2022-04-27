@@ -50,13 +50,13 @@ const Store = () => {
                         <div className="accessories_div py-3 px-3">
                             <h1>Accessories</h1>
                             <ul className='accessories_ul'>
-                                <li>Apple Car</li>
-                                <li>Air port & wireless</li>
-                                <li>Cables & Docks</li>
-                                <li>Cases & Films</li>
-                                <li>Charging Devices</li>
-                                <li>Connected home</li>
+                                <li>Mobiles </li>
+                                <li>Macbook </li>
                                 <li>Headphones</li>
+                                <li>Watches </li>
+                                <li>Charging Devices</li>
+
+
                             </ul>
                         </div>
                         <div className="prices mt-4 px-3">
@@ -71,9 +71,10 @@ const Store = () => {
                             <h1>BRAND</h1>
                             <ul className='accessories_ul'>
                                 <li>Apple </li>
-                                <li>LG</li>
+                                <li>One Plus</li>
                                 <li>SAMSUNG</li>
                                 <li>XIAOMI</li>
+                                <li>OPPO</li>
                             </ul>
                         </div>
                         <div className="d-grid mx-auto mt-4">
