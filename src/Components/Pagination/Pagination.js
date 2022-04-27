@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 
 const Pagination = ({ totalPosts, cardPerPage, paginate }) => {
 
@@ -8,18 +8,15 @@ const Pagination = ({ totalPosts, cardPerPage, paginate }) => {
         pagenumber.push(i);
     }
 
-    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
-    const myRef = useRef(null)
-    const executeScroll = () => scrollToRef(myRef)
 
     return (
         <>
-            <nav className='d-flex justify-content-center' ref={myRef}>
+            <nav className='d-flex justify-content-center'>
                 <ul className="pagination d-flex">
                     {pagenumber.map(number => (
                         <li className="page-item" key={number}>
-                            <a onClick={() => { paginate(number); { executeScroll } }} className="page-link">
+                            <a onClick={() => paginate(number)} className="page-link">
                                 {number}
                             </a>
                         </li>
