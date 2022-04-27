@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Home/Header/Header'
 import Store_nav from './Store_nav'
 import Section_2 from '../Home/Section_2/Section_2'
@@ -6,16 +6,28 @@ import Allproducts from './Allproducts'
 import Footer from "../Home/Footer"
 import '../styles/store.css'
 import { allproducts } from '../Api'
+import Pagination from '../Pagination/Pagination'
 
 const Store = () => {
-    const [allProducts, setAllProducts] = useState(allproducts);
+
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+
+
+    const [allProducts] = useState(allproducts);
     const [currentPage, setCurrentPage] = useState(1);
-    const [cardPerPage, setCardPerPage] = useState(8);
+    const [cardPerPage] = useState(8);
 
 
     const indexofLastCard = currentPage * cardPerPage;
     const indexofFirstCard = indexofLastCard - cardPerPage;
     const currentCards = allProducts.slice(indexofFirstCard, indexofLastCard);
+
+    const paginate = (pagenumber) => setCurrentPage(pagenumber);
 
     return (
         <>
@@ -54,8 +66,8 @@ const Store = () => {
                                 <li>XIAOMI</li>
                             </ul>
                         </div>
-                        <div class="d-grid mx-auto mt-4">
-                            <button class="btn btn-light" type="button">More</button>
+                        <div className="d-grid mx-auto mt-4">
+                            <button className="btn btn-light" type="button">More</button>
                         </div>
                     </div>
 
@@ -63,6 +75,7 @@ const Store = () => {
                         <Section_2 />
 
                         <Allproducts allproducts={currentCards} />
+                        <Pagination cardPerPage={cardPerPage} totalPosts={allProducts.length} paginate={paginate} />
                     </div>
 
                 </div>

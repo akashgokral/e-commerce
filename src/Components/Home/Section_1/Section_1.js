@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useState } from 'react';
 import products from "../../Api"
 import "../../styles/section_1.css"
@@ -8,6 +8,7 @@ import Card from './Card';
 
 
 const Section_1 = () => {
+
     const [data, setData] = useState(products);
     const [data_1, setData_1] = useState(products_1);
     const [load, setLoad] = useState(false);
@@ -23,10 +24,27 @@ const Section_1 = () => {
 
     }
 
+    const myRef1 = useRef(null);
+    const myRef2 = useRef(null);
+
+
+
     const Load = () => {
 
         setLoad(true);
+        myRef1.current.scrollIntoView();
+
+
     }
+    const Less = () => {
+
+        setLoad(!true);
+        myRef2.current.scrollIntoView();
+
+
+    }
+
+
 
 
     const ShowProducts = () => {
@@ -36,7 +54,7 @@ const Section_1 = () => {
 
         return (
             <>
-                <div className='buttons d-flex justify-content-center mb-2 pb-3 '>
+                <div className='buttons d-flex justify-content-center mb-2 pb-3 '  >
                     <button className='btn btn-outline-none fs-5 filter-btn' onClick={() => { setData(products); setData_1(products_1); }}>All</button>
                     <button className='btn btn-outline-none fs-5 filter-btn' onClick={() => filterProduct("macbook")}>Mac</button>
                     <button className='btn btn-outline-none fs-5 filter-btn' onClick={() => filterProduct("iphone")}>iPhone</button>
@@ -63,7 +81,7 @@ const Section_1 = () => {
                     data_1.map((products_1) => {
                         return (
                             <>
-                                <Card key={products_1.id} title={products_1.title} imgurl={products_1.imgurl} price={products_1.price} />
+                                <Card key={products_1.id} title={products_1.title} imgurl={products_1.imgurl} price={products_1.price} ref={myRef1} />
 
                             </>
                         )
@@ -72,8 +90,8 @@ const Section_1 = () => {
 
 
                 <div className='btn_div justify-content-center d-flex'>
-                    {load === false ? (<button type="button" className="btn btn-link" onClick={Load}>Load More</button>)
-                        : (<button type="button" className="btn btn-link" onClick={() => { setLoad(!load) }}>Show Less</button>)}
+                    {load === false ? (<button type="button" className="btn btn-link" onClick={Load}  >Load More</button>)
+                        : (<button type="button" className="btn btn-link" onClick={Less}>Show Less</button>)}
                 </div>
 
             </>
@@ -82,10 +100,10 @@ const Section_1 = () => {
 
     return (
         <>
-            <div className='container my-2 py-5 '>
+            <div className='container my-2 py-5 ' >
                 <div className='row'>
-                    <div className='col-12 mb-5'>
-                        <h1 className='display-6 fw-bolder text-center'>BEST SELLER</h1><hr />
+                    <div className='col-12 mb-5' ref={myRef2}>
+                        <h1 className='display-6 fw-bolder text-center' >BEST SELLER</h1><hr />
                     </div>
                 </div>
                 <div className='row justify-content-center'>

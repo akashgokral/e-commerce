@@ -41,6 +41,6 @@ button.btn:hover {
 
 .badge {
     position: absolute;
-    left: 0;
-    top: 5%;
+    left: 5px;
+    top: 5px;
 }

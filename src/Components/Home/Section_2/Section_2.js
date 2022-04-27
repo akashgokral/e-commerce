@@ -9,7 +9,7 @@ const Section_2 = () => {
             <div className='mt-3 section_2 '>
                 <div className='section_2_content container'>
 
-                    <h3 className='section_2_h3'>i Phone 6 Plus</h3>
+                    <h3 className='section_2_h3'>iPhone 6 Plus</h3>
                     <p className='section_2_p'>Performance and design. Taken right to the edge.</p>
                     <button className='btn btn-link section_2_btn'>Shop Now</button>
 

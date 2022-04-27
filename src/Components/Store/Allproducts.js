@@ -1,5 +1,3 @@
-
-import { allproducts } from '../Api'
 import Card from '../Home/Section_1/Card'
 
 
