@@ -214,8 +214,9 @@ export const allproducts = [
     {
         id: 4, imgurl: iphone4, title: "apple_iPod_2A", price: 45999, cat: 'mobiles', brand: 'apple'
     },
+
     {
-        id: 5, imgurl: ipad, title: "Apple Ipad", price: 75999, cat: 'ipad', brand: 'apple'
+        id: 5, imgurl: ipad, title: "Apple Ipad", price: 75999, cat: 'mobiles', brand: 'apple'
     },
 
     {
@@ -231,7 +232,7 @@ export const allproducts = [
     },
 
     {
-        id: 9, imgurl: access4, title: "MY812", price: 4999, cat: 'headfones', brand: 'apple'
+        id: 9, imgurl: access4, title: "MY812", price: 4999, cat: 'watches', brand: 'apple'
     },
 
     {
@@ -245,6 +246,7 @@ export const allproducts = [
     {
         id: 12, imgurl: access7, title: "Apple Airpods", price: 1999, cat: 'headfones', brand: 'apple'
     },
+
     {
         id: 13, imgurl: access8, title: "Apple_homepod", price: 6999, cat: 'headfones', brand: 'apple'
     },
@@ -260,6 +262,7 @@ export const allproducts = [
     {
         id: 16, imgurl: access11, title: "Headphone", price: 2999, cat: 'headfones', brand: 'apple'
     },
+
     {
         id: 17, imgurl: access12, title: "apple_airpods", price: 1599, cat: 'headfones', brand: 'apple'
     },
@@ -271,164 +274,206 @@ export const allproducts = [
     {
         id: 19, imgurl: macbook2, title: "Apple Mac Mini", price: 75000, cat: 'macbook', brand: 'apple'
     },
+
     {
         id: 20, imgurl: macbook3, title: "Apple Macbook", price: 89999, cat: 'macbook', brand: 'apple'
     },
+
     {
         id: 21, imgurl: iphone13pro, title: "iPhone 13 Pro Max", price: 129900, cat: 'mobiles', brand: 'apple'
     },
+
     {
         id: 22, imgurl: samsungs22, title: "Samsung Galaxy S22", price: 118999, cat: 'mobiles', brand: 'samsung'
     },
 
     {
         id: 23, imgurl: mi11, title: "Xiaomi Mi 11 Ultra", price: 69947, cat: 'mobiles', brand: 'xiaomi'
-    }
-    ,
-    {
-        id: 24, imgurl: applewatch, title: "Apple Watch Series 7 ", price: 53900, cat: 'watches', brand: 'apple'
-    }
-    ,
+    },
 
     {
-        id: 25, imgurl: oppowatch, title: "OPPO  Smart Watch", price: 19990, cat: 'watches ', brand: 'oppo'
+        id: 24, imgurl: applewatch, title: "Apple Watch Series 7", price: 53900, cat: 'watches', brand: 'apple'
+    },
+
+    {
+        id: 25, imgurl: oppowatch, title: "OPPO  Smart Watch", price: 19990, cat: 'watches', brand: 'oppo'
+    },
+
+    {
+        id: 26, imgurl: oneplus, title: "OnePlus Watch", price: 14999, cat: 'watches', brand: 'oneplus'
+    },
+
+    {
+        id: 27, imgurl: oneplusmobile1, title: "OnePlus Nord CE 2 5G", price: 24999, cat: 'mobiles', brand: 'oneplus'
+    },
+
+    {
+        id: 28, imgurl: oneplusmobile2, title: "OnePlus 9RT 5G", price: 46999, cat: 'mobiles', brand: 'oneplus'
+    },
+
+    {
+        id: 29, imgurl: oneplusmobile3, title: "OnePlus 10 Pro 5G", price: 66999, cat: 'mobiles', brand: 'oneplus'
+    },
+
+    {
+        id: 30, imgurl: oneplusmobile4, title: "OnePlus 9 5G", price: 45599, cat: 'mobiles', brand: 'oneplus'
+    },
+
+    {
+        id: 31, imgurl: oneplusmobile5, title: "OnePlus Nord 2 5G", price: 2999, cat: 'mobiles', brand: 'oneplus'
+    },
+
+    {
+        id: 32, imgurl: samsungmobile1, title: "Samsung Galaxy S20", price: 36400, cat: 'mobiles', brand: 'samsung'
+    },
+
+    {
+        id: 33, imgurl: samsungmobile2, title: "Samsung Galaxy Z Flip", price: 81990, cat: 'mobiles', brand: 'samsung'
+    },
+
+    {
+        id: 34, imgurl: samsungmobile3, title: "Samsung Galaxy S21", price: 66999, cat: 'mobiles', brand: 'samsung'
+    },
+
+    {
+        id: 35, imgurl: samsungmobile4, title: "Samsung Galaxy S9 Plus", price: 54999, cat: 'mobiles', brand: 'samsung'
+    },
+
+    {
+        id: 36, imgurl: samsungmobile5, title: "Samsung Galaxy Z Fold", price: 149999, cat: 'mobiles', brand: 'samsung'
+    },
+
+    {
+        id: 37, imgurl: xiaomimobile1, title: "Xiaomi 11T Pro 5G", price: 43999, cat: 'mobiles', brand: 'xiaomi'
+    },
+
+    {
+        id: 38, imgurl: xiaomimobile2, title: "Xiaomi 11i 5G", price: 41999, cat: 'mobiles', brand: 'xiaomi'
+    },
+
+    {
+        id: 39, imgurl: xiaomimobile3, title: "Mi 11X 5G", price: 22999, cat: 'mobiles', brand: 'xiaomi'
+    },
+
+    {
+        id: 40, imgurl: xiaomimobile4, title: "Mi 11X 5G", price: 23498, cat: 'mobiles', brand: 'xiaomi'
+    },
+
+    {
+        id: 41, imgurl: xiaomimobile5, title: "Mi 11 Lite", price: 24999, cat: 'mobiles', brand: 'xiaomi'
+    },
+
+    {
+        id: 42, imgurl: oppomobile1, title: "OPPO F21 Pro", price: 22999, cat: 'mobiles', brand: 'oppo'
+    },
+
+    {
+        id: 43, imgurl: oppomobile2, title: "OPPO Reno7 5G", price: 27069, cat: 'mobiles', brand: 'oppo'
+    },
+
+    {
+        id: 44, imgurl: oppomobile3, title: "OPPO F19 Pro", price: 25990, cat: 'mobiles', brand: 'oppo'
+    },
+
+    {
+        id: 45, imgurl: oppomobile4, title: "Oppo Reno6 5G", price: 35990, cat: 'mobiles', brand: 'oppo'
+    },
+
+    {
+        id: 46, imgurl: oppomobile5, title: "Oppo Reno5", price: 35990, cat: 'mobiles', brand: 'oppo'
+    },
+
+    {
+        id: 47, imgurl: samsungtab1, title: "Samsung Galaxy Tab A7", price: 10999, cat: 'macbook', brand: 'samsung'
+    },
+
+    {
+        id: 48, imgurl: samsungtab2, title: "Samsung Galaxy Tab A8", price: 17999, cat: 'macbook', brand: 'samsung'
+    },
+
+    {
+        id: 49, imgurl: samsungtab3, title: "Samsung Galaxy Tab A7", price: 18999, cat: 'macbook', brand: 'samsung'
+    },
+
+    {
+        id: 50, imgurl: oneplusheadfone1, title: "Oneplus Buds", price: 9990, cat: 'headfones', brand: 'oneplus'
+    },
+
+    {
+        id: 51, imgurl: oneplusheadfone2, title: "OnePlus Buds Z2", price: 4999, cat: 'headfones', brand: 'oneplus'
+    },
+
+    {
+        id: 52, imgurl: oneplusheadfone3, title: "Oneplus Bullets", price: 1999, cat: 'headfones', brand: 'oneplus'
+    },
+
+    {
+        id: 53, imgurl: samsungheadfone1, title: "Samsung Galaxy Buds", price: 8490, cat: 'headfones', brand: 'samsung'
+    },
+
+    {
+        id: 54, imgurl: samsungheadfone2, title: "Samsung Galaxy Buds+", price: 9999, cat: 'headfones', brand: 'samsung'
+    },
+
+    {
+        id: 55, imgurl: samsungheadfone3, title: "Samsung Level U2", price: 2190, cat: 'headfones', brand: 'samsung'
+    },
+
+    {
+        id: 56, imgurl: xiaomiheadfone1, title: "MI Super Bass", price: 1798, cat: 'headfones', brand: 'xiaomi'
+    },
+
+    {
+        id: 57, imgurl: xiaomiheadfone2, title: "MI Pro Bluetooth", price: 1798, cat: 'headfones', brand: 'xiaomi'
+    },
+
+    {
+        id: 58, imgurl: xiaomiheadfone3, title: "MI TWSEJ08WM", price: 2699, cat: 'headfones', brand: 'xiaomi'
+    },
+
+    {
+        id: 59, imgurl: oppoheadfone1, title: "OPPO Enco Buds", price: 1799, cat: 'headfones', brand: 'oppo'
+    },
+
+    {
+        id: 60, imgurl: oppoheadfone2, title: "OPPO Enco Buds", price: 1799, cat: 'headfones', brand: 'oppo'
+    },
+
+    {
+        id: 61, imgurl: oppoheadfone3, title: "OPPO Enco M32", price: 1799, cat: 'headfones', brand: 'oppo'
+    },
+
+    {
+        id: 62, imgurl: applewatch2, title: "Apple Watch SE", price: 28405, cat: 'watches', brand: 'apple'
+    },
+
+    {
+        id: 63, imgurl: onepluswatch2, title: "OnePlus Watch Midnight", price: 14999, cat: 'watches', brand: 'oneplus'
+    },
+
+    {
+        id: 64, imgurl: oppowatch2, title: "OPPO Health & Fitness watch", price: 19990, cat: 'watches', brand: 'oppo'
+    },
+
+    {
+        id: 65, imgurl: applecharger1, title: "Wireless Charging Stand", price: 2899, cat: 'chargingdevice', brand: 'apple'
+    },
+
+    {
+        id: 66, imgurl: onepluscharger1, title: "Type C Cable OnePlus", price: 1599, cat: 'chargingdevice', brand: 'oneplus'
+    },
+
+    {
+        id: 67, imgurl: oppocharger1, title: "Fast Charger for Oppo", price: 349, cat: 'chargingdevice', brand: 'oppo'
+    },
+
+    {
+        id: 68, imgurl: samsungcharger1, title: "Fast Charger for Samsung", price: 549, cat: 'chargingdevice', brand: 'samsung'
+    },
+
+    {
+        id: 69, imgurl: xiaomicharger1, title: "Fast Charger for Xiaomi", price: 349, cat: 'chargingdevice', brand: 'xiaomi'
     }
-    ,
-    {
-        id: 26, imgurl: oneplus, title: "OnePlus Watch ", price: 14999, cat: 'watches ', brand: 'oneplus'
-    },
-    {
-        id: 27, imgurl: oneplusmobile1, title: "OnePlus Nord CE 2 5G ", price: 24999, cat: 'mobiles ', brand: 'oneplus'
-    },
-    {
-        id: 28, imgurl: oneplusmobile2, title: "OnePlus 9RT 5G  ", price: 46999, cat: 'mobiles ', brand: 'oneplus'
-    },
-    {
-        id: 29, imgurl: oneplusmobile3, title: "OnePlus 10 Pro 5G ", price: 66999, cat: 'mobiles ', brand: 'oneplus'
-    },
-    {
-        id: 30, imgurl: oneplusmobile4, title: "OnePlus 9 5G ", price: 45599, cat: 'mobiles ', brand: 'oneplus'
-    },
-    {
-        id: 31, imgurl: oneplusmobile5, title: "OnePlus Nord 2 5G ", price: 2999, cat: 'mobiles ', brand: 'oneplus'
-    },
-    {
-        id: 32, imgurl: samsungmobile1, title: "Samsung Galaxy S20 ", price: 36400, cat: 'mobiles ', brand: 'samsung'
-    },
-    {
-        id: 33, imgurl: samsungmobile2, title: "Samsung Galaxy Z Flip  ", price: 81990, cat: 'mobiles ', brand: 'samsung'
-    },
-    {
-        id: 34, imgurl: samsungmobile3, title: "Samsung Galaxy S21", price: 66999, cat: 'mobiles ', brand: 'samsung'
-    },
-    {
-        id: 35, imgurl: samsungmobile4, title: "Samsung Galaxy S9 Plus ", price: 54999, cat: 'mobiles ', brand: 'samsung'
-    },
-    {
-        id: 36, imgurl: samsungmobile5, title: "Samsung Galaxy Z Fold ", price: 149999, cat: 'mobiles ', brand: 'samsung'
-    },
-    {
-        id: 37, imgurl: xiaomimobile1, title: "Xiaomi 11T Pro 5G", price: 43999, cat: 'mobiles ', brand: 'xiaomi'
-    },
-    {
-        id: 38, imgurl: xiaomimobile2, title: "Xiaomi 11i 5G", price: 41999, cat: 'mobiles ', brand: 'xiaomi'
-    },
-    {
-        id: 39, imgurl: xiaomimobile3, title: "Mi 11X 5G", price: 22999, cat: 'mobiles ', brand: 'xiaomi'
-    },
-    {
-        id: 40, imgurl: xiaomimobile4, title: "Mi 11X 5G ", price: 23498, cat: 'mobiles ', brand: 'xiaomi'
-    },
-    {
-        id: 41, imgurl: xiaomimobile5, title: "Mi 11 Lite", price: 24999, cat: 'mobiles ', brand: 'xiaomi'
-    },
-    {
-        id: 42, imgurl: oppomobile1, title: "OPPO F21 Pro", price: 22999, cat: 'mobiles ', brand: 'oppo'
-    },
-    {
-        id: 43, imgurl: oppomobile2, title: "OPPO Reno7 5G", price: 27069, cat: 'mobiles ', brand: 'oppo'
-    },
-    {
-        id: 44, imgurl: oppomobile3, title: "OPPO F19 Pro", price: 25990, cat: 'mobiles ', brand: 'oppo'
-    },
-    {
-        id: 45, imgurl: oppomobile4, title: "Oppo Reno6 5G ", price: 35990, cat: 'mobiles ', brand: 'oppo'
-    },
-    {
-        id: 46, imgurl: oppomobile5, title: "Oppo Reno5 ", price: 35990, cat: 'mobiles ', brand: 'oppo'
-    },
-    {
-        id: 47, imgurl: samsungtab1, title: "Samsung Galaxy Tab A7", price: 10999, cat: 'macbook ', brand: 'samsung'
-    },
-    {
-        id: 48, imgurl: samsungtab2, title: "Samsung Galaxy Tab A8", price: 17999, cat: 'macbook ', brand: 'samsung'
-    },
-    {
-        id: 49, imgurl: samsungtab3, title: "Samsung Galaxy Tab A7", price: 18999, cat: 'macbook ', brand: 'samsung'
-    },
-    {
-        id: 50, imgurl: oneplusheadfone1, title: "Oneplus Buds", price: 9990, cat: 'headfones ', brand: 'oneplus'
-    },
-    {
-        id: 51, imgurl: oneplusheadfone2, title: "OnePlus Buds Z2", price: 4999, cat: 'headfones ', brand: 'oneplus'
-    },
-    {
-        id: 52, imgurl: oneplusheadfone3, title: "Oneplus Bullets", price: 1999, cat: 'headfones ', brand: 'oneplus'
-    },
-    {
-        id: 53, imgurl: samsungheadfone1, title: "Samsung Galaxy Buds ", price: 8490, cat: 'headfones ', brand: 'samsung'
-    },
-    {
-        id: 54, imgurl: samsungheadfone2, title: "Samsung Galaxy Buds+", price: 9999, cat: 'headfones ', brand: 'samsung'
-    },
-    {
-        id: 55, imgurl: samsungheadfone3, title: "Samsung Level U2", price: 2190, cat: 'headfones ', brand: 'samsung'
-    },
-    {
-        id: 56, imgurl: xiaomiheadfone1, title: "MI Super Bass ", price: 1798, cat: 'headfones ', brand: 'xiaomi'
-    },
-    {
-        id: 57, imgurl: xiaomiheadfone2, title: "MI Pro Bluetooth", price: 1798, cat: 'headfones ', brand: 'xiaomi'
-    },
-    {
-        id: 58, imgurl: xiaomiheadfone3, title: "MI TWSEJ08WM ", price: 2699, cat: 'headfones ', brand: 'xiaomi'
-    },
-    {
-        id: 59, imgurl: oppoheadfone1, title: "OPPO Enco Buds", price: 1799, cat: 'headfones ', brand: 'oppo'
-    },
-    {
-        id: 60, imgurl: oppoheadfone2, title: "OPPO Enco Buds", price: 1799, cat: 'headfones ', brand: 'oppo'
-    },
-    {
-        id: 61, imgurl: oppoheadfone3, title: "OPPO Enco M32", price: 1799, cat: 'headfones ', brand: 'oppo'
-    },
-    {
-        id: 62, imgurl: applewatch2, title: "Apple Watch SE", price: 28405, cat: 'watches ', brand: 'apple'
-    },
-    {
-        id: 63, imgurl: onepluswatch2, title: "OnePlus Watch Midnight", price: 14999, cat: 'watches ', brand: 'oneplus'
-    },
-    {
-        id: 64, imgurl: oppowatch2, title: "OPPO Health & Fitness watch", price: 19990, cat: 'watches ', brand: 'oppo'
-    },
-    {
-        id: 65, imgurl: applecharger1, title: "Wireless Charging Stand ", price: 2899, cat: 'chargingdevice ', brand: 'apple'
-    },
-    {
-        id: 66, imgurl: onepluscharger1, title: "Type C Cable OnePlus ", price: 1599, cat: 'chargingdevice ', brand: 'oneplus'
-    },
-    {
-        id: 67, imgurl: oppocharger1, title: "Fast Charger for Oppo", price: 349, cat: 'chargingdevice ', brand: 'oppo'
-    },
-    {
-        id: 68, imgurl: samsungcharger1, title: "Fast Charger for Samsung", price: 549, cat: 'chargingdevice ', brand: 'samsung'
-    },
-    {
-        id: 69, imgurl: xiaomicharger1, title: "  Fast Charger for Xiaomi", price: 349, cat: 'chargingdevice ', brand: 'xiaomi'
-    }
-
-
-
 
 ]
 

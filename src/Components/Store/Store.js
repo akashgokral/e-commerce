@@ -6,15 +6,16 @@ import Allproducts from './Allproducts'
 import Footer from "../Home/Footer"
 import '../styles/store.css'
 import { allproducts } from '../Api'
+import { FilterSection } from './FilterSection'
 
 
 const Store = () => {
 
-
-
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+
 
 
     const [allProducts, setallProducts] = useState(allproducts);
@@ -39,9 +40,17 @@ const Store = () => {
         window.scrollTo({ top: TopSection.current.offsetTop })
     }
 
-    const filterItem = (brands) => {
-        const updatedItems = allProducts.filter((x) => x.brand === brands);
-        setallProducts(updatedItems);
+
+    const filterItem = (cat) => {
+        const updatedItems1 = allproducts.filter((x) => x.cat === cat);
+        setallProducts(updatedItems1);
+
+        console.log(filterItem)
+    }
+    const filterItem2 = (cat) => {
+        const updatedItems2 = allproducts.filter((y) => y.brand === cat);
+        setallProducts(updatedItems2);
+        console.log(filterItem2)
     }
 
 
@@ -53,15 +62,17 @@ const Store = () => {
 
             <div className='container'>
                 <div className='row'>
+
                     <div className='col-lg-3 filter_section '>
                         <div className="accessories_div py-3 px-3">
                             <h1>Accessories</h1>
                             <ul className='accessories_ul'>
-                                <li>Mobiles </li>
-                                <li>Macbook </li>
-                                <li>Headphones</li>
-                                <li>Watches </li>
-                                <li>Charging Devices</li>
+                                <li onClick={() => setallProducts(allproducts)}>All </li>
+                                <li onClick={() => filterItem('mobiles')}>Mobiles </li>
+                                <li onClick={() => filterItem('macbook')}>Macbook </li>
+                                <li onClick={() => filterItem('headfones')}>Headphones</li>
+                                <li onClick={() => filterItem('watches')}>Watches </li>
+                                <li onClick={() => filterItem('chargingdevice')}>Charging Devices</li>
 
 
                             </ul>
@@ -77,24 +88,25 @@ const Store = () => {
                         <div className="brand_div py-3 px-3 mt-4">
                             <h1>BRAND</h1>
                             <ul className='accessories_ul'>
-                                <li onClick={() => setallProducts(allProducts)}>All </li>
-                                <li onClick={() => filterItem('apple')}>Apple </li>
-                                <li onClick={() => filterItem('oneplus')}>One Plus</li>
-                                <li onClick={() => filterItem('samsung')}>SAMSUNG</li>
-                                <li onClick={() => filterItem('xiaomi')}>XIAOMI</li>
-                                <li onClick={() => filterItem('oppo')}>OPPO</li>
+                                <li onClick={() => setallProducts(allproducts)}>All </li>
+                                <li onClick={() => filterItem2('apple')}>Apple </li>
+                                <li onClick={() => filterItem2('oneplus')}>OnePlus</li>
+                                <li onClick={() => filterItem2('samsung')}>SAMSUNG</li>
+                                <li onClick={() => filterItem2('xiaomi')}>XIAOMI</li>
+                                <li onClick={() => filterItem2('oppo')}>OPPO</li>
                             </ul>
                         </div>
                         <div className="d-grid mx-auto mt-4">
                             <button className="btn btn-light" type="button">More</button>
                         </div>
                     </div>
-
                     <div className='col-lg-9'  >
                         <Section_2 />
 
                         <div ref={TopSection} >
+
                             <Allproducts allproducts={currentCards} />
+
                         </div>
 
 
