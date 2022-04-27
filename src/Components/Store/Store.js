@@ -6,7 +6,7 @@ import Allproducts from './Allproducts'
 import Footer from "../Home/Footer"
 import '../styles/store.css'
 import { allproducts } from '../Api'
-import Pagination from '../Pagination/Pagination'
+
 
 const Store = () => {
 
@@ -97,11 +97,6 @@ const Store = () => {
                                 ))}
                             </ul>
                         </nav>
-
-
-
-
-                        {/* <Pagination cardPerPage={cardPerPage} totalPosts={allProducts.length} paginate={paginate} /> */}
                     </div>
 
                 </div>

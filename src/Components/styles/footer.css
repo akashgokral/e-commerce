@@ -27,8 +27,8 @@ h3.ishop {
 
 @media screen and (max-width:760px) {
 
-    .footer_2 p {
-        margin: 0;
+    .footer {
+        display: none !important;
     }
 
 
