@@ -85,7 +85,10 @@ const Store = () => {
                     <div className='col-lg-9'  >
                         <Section_2 />
 
-                        <div ref={TopSection} >   <Allproducts allproducts={currentCards} /></div>
+                        <div ref={TopSection} >
+                            <Allproducts allproducts={currentCards} />
+                        </div>
+
 
                         <nav className='d-flex justify-content-center'>
                             <ul className="pagination d-flex">

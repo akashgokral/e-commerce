@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.card_img_div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.card_img_div img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.card-title {
+    width: 150px;
+    height: 50px;
+}
