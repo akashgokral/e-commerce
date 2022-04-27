@@ -17,7 +17,7 @@ const Store = () => {
     }, [])
 
 
-    const [allProducts] = useState(allproducts);
+    const [allProducts, setallProducts] = useState(allproducts);
     const [currentPage, setCurrentPage] = useState(1);
     const [cardPerPage] = useState(8);
 
@@ -38,7 +38,14 @@ const Store = () => {
     const gotoTop = () => {
         window.scrollTo({ top: TopSection.current.offsetTop })
     }
-    console.log(gotoTop)
+
+    const filterItem = (brands) => {
+        const updatedItems = allProducts.filter((x) => x.brand === brands);
+        setallProducts(updatedItems);
+    }
+
+
+
     return (
         <>
             <Header />
@@ -70,11 +77,12 @@ const Store = () => {
                         <div className="brand_div py-3 px-3 mt-4">
                             <h1>BRAND</h1>
                             <ul className='accessories_ul'>
-                                <li>Apple </li>
-                                <li>One Plus</li>
-                                <li>SAMSUNG</li>
-                                <li>XIAOMI</li>
-                                <li>OPPO</li>
+                                <li onClick={() => setallProducts(allProducts)}>All </li>
+                                <li onClick={() => filterItem('apple')}>Apple </li>
+                                <li onClick={() => filterItem('oneplus')}>One Plus</li>
+                                <li onClick={() => filterItem('samsung')}>SAMSUNG</li>
+                                <li onClick={() => filterItem('xiaomi')}>XIAOMI</li>
+                                <li onClick={() => filterItem('oppo')}>OPPO</li>
                             </ul>
                         </div>
                         <div className="d-grid mx-auto mt-4">
