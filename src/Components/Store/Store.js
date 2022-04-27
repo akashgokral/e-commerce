@@ -19,7 +19,7 @@ const Store = () => {
 
     const [allProducts] = useState(allproducts);
     const [currentPage, setCurrentPage] = useState(1);
-    const [cardPerPage] = useState(8);
+    const [cardPerPage] = useState(6);
 
 
     const indexofLastCard = currentPage * cardPerPage;
