@@ -5,6 +5,7 @@ import Iphone from "./Components/Iphone/Iphone";
 import Ipad from "./Components/Ipad/Ipad";
 import Macbook from "./Components/Macbook/Macbook";
 import Accessories from "./Components/Accessories/Accessories";
+import Cart from "./Components/Cart/Cart";
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/ipad" element={<Ipad />} />
         <Route path="/macbook" element={<Macbook />} />
         <Route path="/accessories" element={<Accessories />} />
+        <Route path="/Cart" element={<Cart />} />
       </Routes>
 
     </>

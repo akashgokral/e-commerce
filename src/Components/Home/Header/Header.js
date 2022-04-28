@@ -2,7 +2,7 @@ import React from 'react'
 import { FaUserAlt, FaBriefcase, FaSearch } from "react-icons/fa";
 import "../../styles/header.css"
 import Nav from './Nav';
-import Background from './Background';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -16,7 +16,7 @@ const Header = () => {
 
                 <div className='header_2'>
                     <div className='header_2_profile'> <FaUserAlt /><p>My profile</p></div>
-                    <div className='header_2_cart'> <FaBriefcase /><p>2 items</p></div>
+                    <div className='header_2_cart'> <Link to='/Cart'><FaBriefcase /></Link><p>2 items</p></div>
                     <div className='header_2_search'><FaSearch /></div>
                 </div>
 

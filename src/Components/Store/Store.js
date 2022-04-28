@@ -6,7 +6,7 @@ import Allproducts from './Allproducts'
 import Footer from "../Home/Footer"
 import '../styles/store.css'
 import { allproducts } from '../Api'
-import { FilterSection } from './FilterSection'
+import Cart from "../Cart/Cart"
 
 
 const Store = () => {
@@ -58,7 +58,7 @@ const Store = () => {
     return (
         <>
             <Header />
-            <Store_nav />
+            <Store_nav title='Store / Accessories' />
 
             <div className='container'>
                 <div className='row'>
@@ -96,9 +96,9 @@ const Store = () => {
                                 <li onClick={() => filterItem2('oppo')}>OPPO</li>
                             </ul>
                         </div>
-                        <div className="d-grid mx-auto mt-4">
+                        {/* <div className="d-grid mx-auto mt-4">
                             <button className="btn btn-light" type="button">More</button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className='col-lg-9'  >
                         <Section_2 />

@@ -1,0 +1,50 @@
+.redeem {
+    background: #33A0FF;
+    color: #fff;
+    padding: 0.6rem 10px;
+}
+
+.voucher input {
+    border: #F1F3F4 !important;
+    opacity: 1;
+}
+
+@media screen and (max-width:760px) {
+    .header {
+        display: none !important;
+    }
+
+    .store_nav {
+        display: none !important;
+    }
+
+    .product_nav {
+        display: none !important;
+    }
+
+    hr {
+        display: none !important;
+    }
+
+    .voucher {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .payment_section {
+        flex-direction: column !important;
+    }
+
+    .payment_values {
+        padding: 0 19px !important;
+    }
+
+    .responsive_1 {
+        padding: 0 !important;
+        margin-top: 15px !important;
+    }
+
+    .responsive_hr {
+        display: block !important;
+    }
+}
