@@ -6,6 +6,7 @@ import section_2_bg_image from "../../../Images/miscellaneous/2_corousel.png"
 const Section_2 = () => {
     return (
         <>
+
             <div className='section_2 '>
                 <div className='section_2_content container'>
 

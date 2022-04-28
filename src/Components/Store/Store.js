@@ -6,7 +6,7 @@ import Allproducts from './Allproducts'
 import Footer from "../Home/Footer"
 import '../styles/store.css'
 import { allproducts } from '../Api'
-import Cart from "../Cart/Cart"
+
 
 
 const Store = () => {
@@ -61,7 +61,7 @@ const Store = () => {
             <Store_nav title='Store / Accessories' />
 
             <div className='container'>
-                <div className='row'>
+                <div className='row '>
 
                     <div className='col-lg-3 filter_section '>
                         <div className="accessories_div py-3 px-3">

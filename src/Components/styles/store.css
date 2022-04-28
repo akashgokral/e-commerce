@@ -30,4 +30,9 @@
     .filter_section {
         display: none !important;
     }
+
+    .responsive_row {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
