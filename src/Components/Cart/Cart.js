@@ -35,13 +35,13 @@ const Cart = () => {
                         cartproducts.map(cartproducts => (
 
                             <div className="cartcard d-flex col-lg-12  justify-content-between  mt-3 mb-5" >
-                                <div className='d-flex align-items-center col-lg-7 me-3'>
-                                    <div><img src={cross} onClick={() => handleRemove(cartproducts.id)} /></div>
-                                    <img src={cartproducts.imgurl} alt="..." className='ms-4' />
-                                    <h3 className='ms-4'>{cartproducts.title}</h3>
+                                <div className='d-flex align-items-center col-lg-7 me-3 mobile_33'>
+                                    <div className='d-flex align-items-center'><img src={cross} onClick={() => handleRemove(cartproducts.id)} />
+                                        <img src={cartproducts.imgurl} alt="..." className='ms-4' /></div>
+                                    <h3 className='ms-4 mt-3 reponsive_cartcard_title'>{cartproducts.title}</h3>
                                 </div>
 
-                                <div className='d-flex  justify-content-around align-items-center col-lg-5 me-5'>
+                                <div className='d-flex  justify-content-around align-items-center col-lg-5 me-5 mobile_35'>
                                     <h4>{cartproducts.price}</h4>
                                     <h4 className='ms-2'>1</h4>
                                     <h4 className='me-5'>Unit Price</h4>

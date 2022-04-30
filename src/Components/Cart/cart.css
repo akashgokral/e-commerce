@@ -48,5 +48,27 @@
         display: block !important;
     }
 
+    .mobile_33 {
+        flex-direction: column !important;
+
+    }
+
+    .mobile_35 {
+
+        margin: 0 !important;
+    }
+
+    .reponsive_cartcard_title {
+        margin: 25px 0px !important;
+    }
+
+    .mobile_35 h4 {
+        margin: 0px 25px;
+    }
+
+    .cartcard {
+        flex-direction: column !important;
+
+    }
 
 }

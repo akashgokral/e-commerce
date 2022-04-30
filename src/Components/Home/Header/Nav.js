@@ -3,9 +3,13 @@ import "../../styles/nav.css"
 import logo from "../../../Images/Web/iSHOP Logo.svg"
 import { Link, NavLink } from 'react-router-dom'
 import { FaUserAlt, FaBriefcase, FaSearch } from "react-icons/fa";
+import { useSelector } from 'react-redux';
 
 
 const Nav = () => {
+
+    const items = useSelector((state) => state.cart);
+
     return (
         <>
 
@@ -22,7 +26,7 @@ const Nav = () => {
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
                             <li className="nav-item responsive_header responsive_header_li d-flex justify-content-between my-3">
 
-                                <div className='header_2_cart m-0'> <Link to='/Cart'><FaBriefcase /></Link><p>2 items</p></div>
+                                <div className='header_2_cart m-0'> <Link to='/Cart'><FaBriefcase /></Link><p>{items.length} items</p></div>
                                 <div className='header_2_profile'> <FaUserAlt /><p>My profile</p></div>
                                 <div className='header_1'>
                                     <select className='header_1_lang'><option>EN</option> </select>
