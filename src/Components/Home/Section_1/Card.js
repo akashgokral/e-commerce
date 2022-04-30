@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { ADD } from '../../Redux/Reducer';
-
+import "./card.css"
 
 const Card = ({ title, id, imgurl, price, products }) => {
 

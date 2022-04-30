@@ -4,8 +4,8 @@ import products from "../../Api"
 import "../../styles/section_1.css"
 import { products_1 } from '../../Api';
 import Card from './Card';
-import { useDispatch, useSelector } from 'react-redux';
-import { ADD } from '../../Redux/Action';
+
+
 
 
 
@@ -54,6 +54,7 @@ const Section_1 = () => {
 
                 </div>
                 {
+
                     data.map((products) => {
                         return (
                             <>

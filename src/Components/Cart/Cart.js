@@ -1,12 +1,19 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import Header from '../Home/Header/Header'
 import Store_nav from '../Store/Store_nav'
 import "./cart.css"
+import cross from "../../Images/cross.svg"
+import { REMOVE } from "../Redux/Reducer"
 
 const Cart = () => {
 
+    const dispatch = useDispatch();
+
     const cartproducts = useSelector((state) => state.cart);
+    const handleRemove = (productid) => {
+        dispatch(REMOVE(productid))
+    }
 
     return (
         <>
@@ -27,16 +34,17 @@ const Cart = () => {
                     {
                         cartproducts.map(cartproducts => (
 
-                            <div className="cartcard d-flex col-lg-10 mx-auto justify-content-between  mt-3 mb-5" >
-                                <div className='d-flex align-items-center col-lg-8'>
-                                    <img src={cartproducts.imgurl} alt="..." />
+                            <div className="cartcard d-flex col-lg-12  justify-content-between  mt-3 mb-5" >
+                                <div className='d-flex align-items-center col-lg-7 me-3'>
+                                    <div><img src={cross} onClick={() => handleRemove(cartproducts.id)} /></div>
+                                    <img src={cartproducts.imgurl} alt="..." className='ms-4' />
                                     <h3 className='ms-4'>{cartproducts.title}</h3>
                                 </div>
 
-                                <div className='d-flex  justify-content-around align-items-center col-lg-4 '>
-                                    <h4 className=''>{cartproducts.price}</h4>
-                                    <h4 className='ms-5'>1</h4>
-                                    <h4 className='ms-5'>Unit Price</h4>
+                                <div className='d-flex  justify-content-around align-items-center col-lg-5 me-5'>
+                                    <h4>{cartproducts.price}</h4>
+                                    <h4 className='ms-2'>1</h4>
+                                    <h4 className='me-5'>Unit Price</h4>
                                 </div>
 
                             </div>
