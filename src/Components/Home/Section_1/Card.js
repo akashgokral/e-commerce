@@ -1,6 +1,19 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { ADD } from '../../Redux/Reducer';
 
-const Card = ({ title, id, imgurl, price }) => {
+
+const Card = ({ title, id, imgurl, price, products }) => {
+
+
+    const dispatch = useDispatch();
+
+    const addproducts = (e) => {
+        dispatch(ADD(e));
+        console.log(e)
+    }
+
+
     return (
         <>
             <div className='col-md-3 col-6 mb-4 pt-5'>
@@ -9,8 +22,8 @@ const Card = ({ title, id, imgurl, price }) => {
                     <div className='card_img_div mt-3'>     <img src={imgurl} className="card-img-top img-fluid" alt={title} ></img></div>
                     <div className="card-body ">
                         <h5 className="card-title mb-0">{title}...</h5>
-                        <p className="card-text fw-bold m-2">${price}</p>
-                        <a href="#" className="btn btn-outline-dark">Buy Now</a>
+                        <p className="card-text fw-bold m-2">₹ {price}</p>
+                        <a href="#" className="btn btn-outline-dark" onClick={() => addproducts(products)} >Buy Now</a>
                     </div>
                 </div>
 

@@ -1,3 +1,4 @@
+import React from 'react'
 import Home from "./Components/Home/Home";
 import Store from "./Components/Store/Store";
 import { Routes, Route } from 'react-router-dom'
@@ -6,6 +7,7 @@ import Ipad from "./Components/Ipad/Ipad";
 import Macbook from "./Components/Macbook/Macbook";
 import Accessories from "./Components/Accessories/Accessories";
 import Cart from "./Components/Cart/Cart";
+
 
 
 

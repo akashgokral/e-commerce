@@ -3,8 +3,12 @@ import { FaUserAlt, FaBriefcase, FaSearch } from "react-icons/fa";
 import "../../styles/header.css"
 import Nav from './Nav';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+
+    const items = useSelector((state) => state.cart);
+
     return (
         <>
             <div className='header'>
@@ -16,7 +20,7 @@ const Header = () => {
 
                 <div className='header_2'>
                     <div className='header_2_profile'> <FaUserAlt /><p>My profile</p></div>
-                    <div className='header_2_cart'> <Link to='/Cart'><FaBriefcase /></Link><p>2 items</p></div>
+                    <div className='header_2_cart'> <Link to='/Cart'><FaBriefcase /></Link><p>{items.length} items</p></div>
                     <div className='header_2_search'><FaSearch /></div>
                 </div>
 

@@ -4,6 +4,8 @@ import products from "../../Api"
 import "../../styles/section_1.css"
 import { products_1 } from '../../Api';
 import Card from './Card';
+import { useDispatch, useSelector } from 'react-redux';
+import { ADD } from '../../Redux/Action';
 
 
 
@@ -18,30 +20,19 @@ const Section_1 = () => {
         const updatedList2 = products_1.filter((x) => x.cat === cat);
         setData(updatedList);
         setData_1(updatedList2);
-
-
-
-
     }
 
     const myRef1 = useRef(null);
     const myRef2 = useRef(null);
 
-
-
     const Load = () => {
 
         setLoad(true);
-        myRef1.current.scrollIntoView();
-
-
+        // myRef1.current.scrollIntoView();
     }
     const Less = () => {
-
         setLoad(!true);
         myRef2.current.scrollIntoView();
-
-
     }
 
 
@@ -66,7 +57,7 @@ const Section_1 = () => {
                     data.map((products) => {
                         return (
                             <>
-                                <Card key={products.id} title={products.title} imgurl={products.imgurl} price={products.price} />
+                                <Card key={products.id} title={products.title} imgurl={products.imgurl} price={products.price} products={products} />
                             </>
                         )
                     })
