@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { ADD } from '../../Redux/Reducer';
 import "./card.css"
 
-const Card = ({ title, id, imgurl, price, products }) => {
+const Card = ({ title, id, imgurl, price, products, products_1, allproducts }) => {
 
 
     const dispatch = useDispatch();
@@ -23,7 +23,7 @@ const Card = ({ title, id, imgurl, price, products }) => {
                     <div className="card-body ">
                         <h5 className="card-title mb-0">{title}...</h5>
                         <p className="card-text fw-bold m-2">₹ {price}</p>
-                        <a href="#" className="btn btn-outline-dark" onClick={() => addproducts(products)} >Buy Now</a>
+                        <a href="#" className="btn btn-outline-dark" onClick={() => addproducts((products), (products_1), (allproducts))} >Buy Now</a>
                     </div>
                 </div>
 

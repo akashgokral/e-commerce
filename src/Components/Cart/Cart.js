@@ -1,19 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import Header from '../Home/Header/Header'
 import Store_nav from '../Store/Store_nav'
 import "./cart.css"
 import cross from "../../Images/cross.svg"
-import { REMOVE } from "../Redux/Reducer"
+import { REMOVE, DECREMENT, ADD, SUBTOTAL } from "../Redux/Reducer"
 
 const Cart = () => {
-
+    const cartproducts = useSelector((state) => state.cart);
     const dispatch = useDispatch();
 
-    const cartproducts = useSelector((state) => state.cart);
+    useEffect(() => {
+        dispatch(SUBTOTAL());
+    }, [cartproducts, dispatch]);
+
+
+
     const handleRemove = (productid) => {
         dispatch(REMOVE(productid))
     }
+
+    const handleIncrement = (productid) => {
+        dispatch(ADD(productid))
+    }
+    const handleDecrement = (productid) => {
+        dispatch(DECREMENT(productid))
+    }
+
+
 
     return (
         <>
@@ -32,19 +46,19 @@ const Cart = () => {
                     </div>
                     <hr className='col-lg-10 mx-auto' />
                     {
-                        cartproducts.map(cartproducts => (
+                        cartproducts.cartItems.map(cartproducts => (
 
                             <div className="cartcard d-flex col-lg-12  justify-content-between  mt-3 mb-5" >
                                 <div className='d-flex align-items-center col-lg-7 me-3 mobile_33'>
-                                    <div className='d-flex align-items-center'><img src={cross} onClick={() => handleRemove(cartproducts.id)} />
+                                    <div className='d-flex align-items-center'><img src={cross} onClick={() => handleRemove(cartproducts)} />
                                         <img src={cartproducts.imgurl} alt="..." className='ms-4' /></div>
                                     <h3 className='ms-4 mt-3 reponsive_cartcard_title'>{cartproducts.title}</h3>
                                 </div>
 
                                 <div className='d-flex  justify-content-around align-items-center col-lg-5 me-5 mobile_35'>
-                                    <h4>{cartproducts.price}</h4>
-                                    <h4 className='ms-2'>1</h4>
-                                    <h4 className='me-5'>Unit Price</h4>
+                                    <h4>₹{cartproducts.price}</h4>
+                                    <div className='cartqty'><span className='me-3 fs-5 addsub' onClick={() => handleDecrement(cartproducts)}>-</span><span className='fs-4'>{cartproducts.cartQuantity}</span><span className='ms-3 fs-5 addsub' onClick={() => handleIncrement(cartproducts)}>+</span></div>
+                                    <h4 className='me-5'>₹{cartproducts.price * cartproducts.cartQuantity}</h4>
                                 </div>
 
                             </div>
@@ -59,12 +73,12 @@ const Cart = () => {
                         <div className='payment_values col-lg-5 '>
                             <div className='d-flex justify-content-around'>
                                 <p>Subtotal</p>
-                                <p className='ms-5'>$998</p>
+                                <p className='ms-5'>{cartproducts.cartTotalAmount}</p>
                             </div>
-                            <div className='d-flex justify-content-around'>
-                                <p>Shipping Free</p>
-                                <p className='ms-2'>$20</p>
-                            </div>
+                            {/* <div className='d-flex justify-content-around'>
+                                <p>Shipping Fee</p>
+                                <p className='ms-2'>20</p>
+                            </div> */}
                             <div className='d-flex justify-content-around'>
                                 <p className='me-3'>Coupon</p>
                                 <p className='ms-4'>No</p>
@@ -72,7 +86,7 @@ const Cart = () => {
                             <hr className='mt-2 mb-4 responsive_hr' />
                             <div className='d-flex justify-content-around px-4 responsive_1'>
                                 <h4>Total</h4>
-                                <h4>$1018</h4>
+                                <h4>₹{cartproducts.cartTotalAmount}</h4>
                             </div>
                             <div class="d-grid mt-4 px-4">
                                 <button className="btn btn-primary" type="button">Checkout</button>

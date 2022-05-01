@@ -73,7 +73,7 @@ const Section_1 = () => {
                     data_1.map((products_1) => {
                         return (
                             <>
-                                <Card key={products_1.id} title={products_1.title} imgurl={products_1.imgurl} price={products_1.price} ref={myRef1} />
+                                <Card key={products_1.id} title={products_1.title} imgurl={products_1.imgurl} price={products_1.price} ref={myRef1} products_1={products_1} />
 
                             </>
                         )

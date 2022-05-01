@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 
 const Nav = () => {
 
-    const items = useSelector((state) => state.cart);
+    const { cartTotalQuantity } = useSelector((state) => state.cart);
 
     return (
         <>
@@ -26,7 +26,7 @@ const Nav = () => {
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
                             <li className="nav-item responsive_header responsive_header_li d-flex justify-content-between my-3">
 
-                                <div className='header_2_cart m-0'> <Link to='/Cart'><FaBriefcase /></Link><p>{items.length} items</p></div>
+                                <div className='header_2_cart m-0'> <Link to='/Cart'><FaBriefcase /></Link><p>{cartTotalQuantity} items</p></div>
                                 <div className='header_2_profile'> <FaUserAlt /><p>My profile</p></div>
                                 <div className='header_1'>
                                     <select className='header_1_lang'><option>EN</option> </select>

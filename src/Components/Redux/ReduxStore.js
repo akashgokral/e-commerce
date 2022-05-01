@@ -5,6 +5,7 @@ const ReduxStore = configureStore({
     reducer: {
         cart: cartReducer,
     },
+
 });
 
 export default ReduxStore;

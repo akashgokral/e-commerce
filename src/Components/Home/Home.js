@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <>
-            <Header />
+            <Header carttitle='My Cart' />
             <Background />
             <Section_1 />
             <Section_2 />

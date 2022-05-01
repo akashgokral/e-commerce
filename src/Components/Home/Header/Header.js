@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 const Header = () => {
 
-    const items = useSelector((state) => state.cart);
+    const { cartTotalQuantity } = useSelector((state) => state.cart);
 
     return (
         <>
@@ -20,7 +20,7 @@ const Header = () => {
 
                 <div className='header_2'>
                     <div className='header_2_profile'> <FaUserAlt /><p>My profile</p></div>
-                    <div className='header_2_cart'> <Link to='/Cart'><FaBriefcase /></Link><p>{items.length} items</p></div>
+                    <div className='header_2_cart'> <Link to='/Cart'><FaBriefcase /></Link><p>{cartTotalQuantity} items</p></div>
                     <div className='header_2_search'><FaSearch /></div>
                 </div>
 
