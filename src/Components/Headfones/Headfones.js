@@ -11,10 +11,10 @@ const Headfones = () => {
                 <div className='row justify-content-center pt-5'>
 
                     {
-                        headfones.map((item) => {
+                        headfones.map((products) => {
                             return (
                                 <>
-                                    <Card key={item.id} title={item.title} imgurl={item.imgurl} price={item.price} />
+                                    <Card key={products.id} title={products.title} imgurl={products.imgurl} price={products.price} products={products} />
                                 </>
                             )
                         })

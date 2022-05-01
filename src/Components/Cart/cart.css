@@ -20,6 +20,11 @@
     cursor: pointer !important;
 }
 
+.cart_img {
+    width: 100px !important;
+    height: 150px !important;
+}
+
 @media screen and (max-width:760px) {
     .header {
         display: none !important;

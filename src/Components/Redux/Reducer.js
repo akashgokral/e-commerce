@@ -19,7 +19,7 @@ const cartSlice = createSlice({
             );
             if (itemIndex >= 0) {
                 state.cartItems[itemIndex].cartQuantity += 1;
-                toast.info(`Increased quantity of ${action.payload.title} `, { position: "bottom-left", });
+                // toast.info(`Increased quantity of ${action.payload.title} `, { position: "bottom-left", });
             } else {
                 const tempProduct = { ...action.payload, cartQuantity: 1 };
                 state.cartItems.push(tempProduct);
@@ -39,7 +39,7 @@ const cartSlice = createSlice({
             )
             if (state.cartItems[itemIndex].cartQuantity > 1) {
                 state.cartItems[itemIndex].cartQuantity -= 1
-                toast.info(`Decreased quantity of ${action.payload.title} `, { position: "bottom-left", });
+                // toast.info(`Decreased quantity of ${action.payload.title} `, { position: "bottom-left", });
             }
             else if (state.cartItems[itemIndex].cartQuantity === 1) {
                 const removedItems = state.cartItems.filter((item) => item.id !== action.payload.id);

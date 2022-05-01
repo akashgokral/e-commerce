@@ -15,10 +15,10 @@ const Allproducts = ({ allproducts }) => {
                 <div className='row justify-content-center pt-5'>
 
                     {
-                        allproducts.map((item) => {
+                        allproducts.map((products) => {
                             return (
                                 <>
-                                    <Card key={item.id} title={item.title} imgurl={item.imgurl} price={item.price} allproducts={allproducts} />
+                                    <Card key={products.id} title={products.title} imgurl={products.imgurl} price={products.price} products={products} />
                                 </>
                             )
                         })

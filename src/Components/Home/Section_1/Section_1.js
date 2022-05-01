@@ -38,6 +38,7 @@ const Section_1 = () => {
 
 
 
+
     const ShowProducts = () => {
 
 
@@ -70,10 +71,10 @@ const Section_1 = () => {
 
                 {
                     load &&
-                    data_1.map((products_1) => {
+                    data_1.map((products) => {
                         return (
                             <>
-                                <Card key={products_1.id} title={products_1.title} imgurl={products_1.imgurl} price={products_1.price} ref={myRef1} products_1={products_1} />
+                                <Card key={products.id} title={products.title} imgurl={products.imgurl} price={products.price} ref={myRef1} products={products} />
 
                             </>
                         )

@@ -51,7 +51,7 @@ const Cart = () => {
                             <div className="cartcard d-flex col-lg-12  justify-content-between  mt-3 mb-5" >
                                 <div className='d-flex align-items-center col-lg-7 me-3 mobile_33'>
                                     <div className='d-flex align-items-center'><img src={cross} onClick={() => handleRemove(cartproducts)} />
-                                        <img src={cartproducts.imgurl} alt="..." className='ms-4' /></div>
+                                        <img src={cartproducts.imgurl} alt="..." className='ms-4 cart_img img-fluid' /></div>
                                     <h3 className='ms-4 mt-3 reponsive_cartcard_title'>{cartproducts.title}</h3>
                                 </div>
 

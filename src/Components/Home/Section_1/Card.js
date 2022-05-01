@@ -23,7 +23,7 @@ const Card = ({ title, id, imgurl, price, products, products_1, allproducts }) =
                     <div className="card-body ">
                         <h5 className="card-title mb-0">{title}...</h5>
                         <p className="card-text fw-bold m-2">₹ {price}</p>
-                        <a href="#" className="btn btn-outline-dark" onClick={() => addproducts((products), (products_1), (allproducts))} >Buy Now</a>
+                        <a href="#" className="btn btn-outline-dark" onClick={() => addproducts((products))} >Buy Now</a>
                     </div>
                 </div>
 
