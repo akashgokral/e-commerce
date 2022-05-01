@@ -476,7 +476,148 @@ export const allproducts = [
     }
 
 ]
+export const iphone = [
+
+    {
+        id: 1, imgurl: iphone1, title: "Apple iPhone 11", price: 25999, cat: 'mobiles', brand: 'apple'
+    },
+
+    {
+        id: 2, imgurl: iphone2, title: "ipod-touch", price: 23999, cat: 'mobiles', brand: 'apple'
+    },
+
+    {
+        id: 3, imgurl: iphone3, title: "Apple iPhone 10", price: 20999, cat: 'mobiles', brand: 'apple'
+    },
+
+    {
+        id: 4, imgurl: iphone4, title: "apple_iPod_2A", price: 45999, cat: 'mobiles', brand: 'apple'
+    },
+
+    {
+        id: 5, imgurl: ipad, title: "Apple Ipad", price: 75999, cat: 'mobiles', brand: 'apple'
+    },
+
+    {
+        id: 21, imgurl: iphone13pro, title: "iPhone 13 Pro Max", price: 129900, cat: 'mobiles', brand: 'apple'
+    },
 
 
+]
+export const macbook = [
 
+    {
+        id: 18, imgurl: macbook1, title: "Macbook Air", price: 85599, cat: 'macbook', brand: 'apple'
+    },
+
+    {
+        id: 19, imgurl: macbook2, title: "Apple Mac Mini", price: 75000, cat: 'macbook', brand: 'apple'
+    },
+
+    {
+        id: 20, imgurl: macbook3, title: "Apple Macbook", price: 89999, cat: 'macbook', brand: 'apple'
+    }
+]
+export const watches = [
+
+
+    {
+        id: 6, imgurl: access1, title: "Apple watch1", price: 15999, cat: 'watches', brand: 'apple'
+    },
+
+
+    {
+        id: 9, imgurl: access4, title: "MY812", price: 4999, cat: 'watches', brand: 'apple'
+    },
+
+    {
+        id: 10, imgurl: access5, title: "Apple Magic", price: 5999, cat: 'watches', brand: 'apple'
+    },
+
+    {
+        id: 11, imgurl: access6, title: "Apple Watch 21-1", price: 5555, cat: 'watches', brand: 'apple'
+    },
+    {
+        id: 24, imgurl: applewatch, title: "Apple Watch Series 7", price: 53900, cat: 'watches', brand: 'apple'
+    },
+
+    {
+        id: 25, imgurl: oppowatch, title: "OPPO  Smart Watch", price: 19990, cat: 'watches', brand: 'oppo'
+    },
+
+    {
+        id: 26, imgurl: oneplus, title: "OnePlus Watch", price: 14999, cat: 'watches', brand: 'oneplus'
+
+    },
+    {
+        id: 62, imgurl: applewatch2, title: "Apple Watch SE", price: 28405, cat: 'watches', brand: 'apple'
+    },
+    {
+        id: 63, imgurl: onepluswatch2, title: "OnePlus Watch Midnight", price: 14999, cat: 'watches', brand: 'oneplus'
+    },
+
+    {
+        id: 64, imgurl: oppowatch2, title: "OPPO Health & Fitness watch", price: 19990, cat: 'watches', brand: 'oppo'
+    }
+]
+
+export const headfones = [
+    {
+        id: 8, imgurl: access3, title: "airpods-max-hero", price: 8999, cat: 'headfones', brand: 'apple'
+    },
+    {
+        id: 12, imgurl: access7, title: "Apple Airpods", price: 1999, cat: 'headfones', brand: 'apple'
+    },
+    {
+        id: 13, imgurl: access8, title: "Apple_homepod", price: 6999, cat: 'headfones', brand: 'apple'
+    },
+    {
+        id: 14, imgurl: access9, title: "design-hero_2x", price: 2999, cat: 'headfones', brand: 'apple'
+    },
+
+    {
+        id: 16, imgurl: access11, title: "Headphone", price: 2999, cat: 'headfones', brand: 'apple'
+    },
+    {
+        id: 17, imgurl: access12, title: "apple_airpods", price: 1599, cat: 'headfones', brand: 'apple'
+    },
+    {
+        id: 50, imgurl: oneplusheadfone1, title: "Oneplus Buds", price: 9990, cat: 'headfones', brand: 'oneplus'
+    },
+    {
+        id: 51, imgurl: oneplusheadfone2, title: "OnePlus Buds Z2", price: 4999, cat: 'headfones', brand: 'oneplus'
+    },
+    {
+        id: 52, imgurl: oneplusheadfone3, title: "Oneplus Bullets", price: 1999, cat: 'headfones', brand: 'oneplus'
+    },
+    {
+        id: 53, imgurl: samsungheadfone1, title: "Samsung Galaxy Buds", price: 8490, cat: 'headfones', brand: 'samsung'
+    },
+    {
+        id: 54, imgurl: samsungheadfone2, title: "Samsung Galaxy Buds+", price: 9999, cat: 'headfones', brand: 'samsung'
+    },
+    {
+        id: 55, imgurl: samsungheadfone3, title: "Samsung Level U2", price: 2190, cat: 'headfones', brand: 'samsung'
+    },
+    {
+        id: 56, imgurl: xiaomiheadfone1, title: "MI Super Bass", price: 1798, cat: 'headfones', brand: 'xiaomi'
+    },
+    {
+        id: 57, imgurl: xiaomiheadfone2, title: "MI Pro Bluetooth", price: 1798, cat: 'headfones', brand: 'xiaomi'
+    },
+    {
+        id: 58, imgurl: xiaomiheadfone3, title: "MI TWSEJ08WM", price: 2699, cat: 'headfones', brand: 'xiaomi'
+    },
+    {
+        id: 59, imgurl: oppoheadfone1, title: "OPPO Enco Buds", price: 1799, cat: 'headfones', brand: 'oppo'
+    },
+    {
+        id: 60, imgurl: oppoheadfone2, title: "OPPO Enco Buds", price: 1799, cat: 'headfones', brand: 'oppo'
+    },
+    {
+        id: 61, imgurl: oppoheadfone3, title: "OPPO Enco M32", price: 1799, cat: 'headfones', brand: 'oppo'
+    }
+
+
+]
 export default products;

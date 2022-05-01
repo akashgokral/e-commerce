@@ -45,14 +45,14 @@ const Nav = () => {
 
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/ipad" > IPAD</NavLink>
+                                <NavLink to="/ipad" > WATCHES</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/macbook" > MACBOOK</NavLink>
 
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/accessories" > ACCESSORIES</NavLink>
+                                <NavLink to="/accessories" > HEADFONES</NavLink>
 
                             </li>
 
