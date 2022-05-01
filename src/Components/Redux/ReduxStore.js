@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import cartReducer from "./Reducer"
+import cartReducer, { SUBTOTAL } from "./Reducer"
 
-const ReduxStore = configureStore({
+export const ReduxStore = configureStore({
     reducer: {
         cart: cartReducer,
     },
 
 });
+ReduxStore.dispatch(SUBTOTAL());
 
-export default ReduxStore;

@@ -9,6 +9,8 @@ const Header = () => {
 
     const { cartTotalQuantity } = useSelector((state) => state.cart);
 
+
+
     return (
         <>
             <div className='header'>

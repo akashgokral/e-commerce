@@ -4,12 +4,9 @@ import './index.css';
 import "react-toastify/dist/ReactToastify.css"
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import ReduxStore from "../src/Components/Redux/ReduxStore"
+import { ReduxStore } from "../src/Components/Redux/ReduxStore"
 import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify"
-
-
-
 
 
 
