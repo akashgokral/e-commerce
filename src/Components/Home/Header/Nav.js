@@ -60,7 +60,7 @@ const Nav = () => {
 
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/accessories" > HEADFONES</NavLink>
+                                <NavLink to="/accessories" > HEADPHONES</NavLink>
 
                             </li>
 
