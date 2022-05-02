@@ -10,7 +10,7 @@ const Card = ({ title, id, imgurl, price, products, products_1, allproducts }) =
 
     const addproducts = (e) => {
         dispatch(ADD(e));
-        console.log(e)
+
     }
 
 

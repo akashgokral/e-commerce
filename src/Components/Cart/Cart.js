@@ -28,7 +28,6 @@ const Cart = () => {
     }
 
 
-
     return (
         <>
             <Header />
@@ -75,10 +74,10 @@ const Cart = () => {
                                 <p>Subtotal</p>
                                 <p className='ms-5'>{cartproducts.cartTotalAmount}</p>
                             </div>
-                            {/* <div className='d-flex justify-content-around'>
+                            <div className='d-flex justify-content-around'>
                                 <p>Shipping Fee</p>
                                 <p className='ms-2'>20</p>
-                            </div> */}
+                            </div>
                             <div className='d-flex justify-content-around'>
                                 <p className='me-3'>Coupon</p>
                                 <p className='ms-4'>No</p>
@@ -86,7 +85,7 @@ const Cart = () => {
                             <hr className='mt-2 mb-4 responsive_hr' />
                             <div className='d-flex justify-content-around px-4 responsive_1'>
                                 <h4>Total</h4>
-                                <h4>₹{cartproducts.cartTotalAmount}</h4>
+                                <h4>   ₹{cartproducts.cartTotalAmount > 0 ? cartproducts.cartTotalAmount + 20 : cartproducts.cartTotalAmount}</h4>
                             </div>
                             <div class="d-grid mt-4 px-4">
                                 <button className="btn btn-primary" type="button">Checkout</button>

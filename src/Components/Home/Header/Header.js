@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaUserAlt, FaBriefcase, FaSearch } from "react-icons/fa";
 import "../../styles/header.css"
 import Nav from './Nav';
@@ -7,8 +7,16 @@ import { useSelector } from 'react-redux';
 
 const Header = () => {
 
-    const { cartTotalQuantity } = useSelector((state) => state.cart);
 
+
+    const [qty, setQty] = useState([]);
+
+    const cartQty = useSelector((state) => state.cart);
+
+    useEffect(() => {
+        setQty(cartQty);
+        console.log(cartQty)
+    }, [cartQty])
 
 
     return (
@@ -22,7 +30,7 @@ const Header = () => {
 
                 <div className='header_2'>
                     <div className='header_2_profile'> <FaUserAlt /><p>My profile</p></div>
-                    <div className='header_2_cart'> <Link to='/Cart'><FaBriefcase /></Link><p>{cartTotalQuantity} items</p></div>
+                    <div className='header_2_cart'> <Link to='/Cart'><FaBriefcase /></Link><p>{cartQty.cartItems.length} items</p></div>
                     <div className='header_2_search'><FaSearch /></div>
                 </div>
 
