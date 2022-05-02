@@ -25,6 +25,13 @@
     height: 150px !important;
 }
 
+.cart_empty {
+    font-size: 20px;
+    color: rgb(84, 84, 84);
+    width: 100% !important;
+    height: 100% !important;
+}
+
 @media screen and (max-width:760px) {
     .header {
         display: none !important;
@@ -87,4 +94,11 @@
 
     }
 
+    .cart_empty {
+        margin-top: 200px !important;
+    }
+
+    .start_shopping {
+        margin-top: 20px !important;
+    }
 }
