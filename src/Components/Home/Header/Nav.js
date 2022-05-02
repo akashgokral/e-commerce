@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../../styles/nav.css"
 import logo from "../../../Images/Web/iSHOP Logo.svg"
 import { Link, NavLink } from 'react-router-dom'
@@ -8,7 +8,15 @@ import { useSelector } from 'react-redux';
 
 const Nav = () => {
 
-    const { quantity } = useSelector((state) => state.cart);
+    const [qty, setQty] = useState([]);
+
+    const cartQty = useSelector((state) => state.cart);
+
+    useEffect(() => {
+        setQty(cartQty);
+        console.log(cartQty)
+    }, [cartQty])
+
 
     return (
         <>
@@ -26,7 +34,7 @@ const Nav = () => {
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
                             <li className="nav-item responsive_header responsive_header_li d-flex justify-content-between my-3">
 
-                                <div className='header_2_cart m-0'> <Link to='/Cart'><FaBriefcase /></Link><p>{quantity} items</p></div>
+                                <div className='header_2_cart m-0'> <Link to='/Cart'><FaBriefcase /></Link><p>{cartQty.cartItems.length} items</p></div>
                                 <div className='header_2_profile'> <FaUserAlt /><p>My profile</p></div>
                                 <div className='header_1'>
                                     <select className='header_1_lang'><option>EN</option> </select>
