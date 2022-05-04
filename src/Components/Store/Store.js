@@ -101,7 +101,9 @@ const Store = () => {
                             <button className="btn btn-light" type="button">More</button>
                         </div> */}
                     </div>
-                    <div className='col-lg-9'  >
+                    <div className='col-lg-9 p-0'  >
+
+
                         <Section_2 />
 
                         <div ref={TopSection} >
@@ -127,7 +129,6 @@ const Store = () => {
                 </div>
                 <Footer />
             </div>
-
 
 
         </>
