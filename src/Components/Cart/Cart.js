@@ -5,11 +5,13 @@ import Store_nav from '../Store/Store_nav'
 import "./cart.css"
 import cross from "../../Images/cross.svg"
 import { REMOVE, DECREMENT, ADD, SUBTOTAL } from "../Redux/Reducer"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Cart = () => {
     const cartproducts = useSelector((state) => state.cart);
+    const auth = useSelector((state) => state.auth);
 
+    const navigate = useNavigate();
 
     const dispatch = useDispatch();
 
@@ -113,7 +115,9 @@ const Cart = () => {
                                         <h4>   ₹{cartproducts.cartTotalAmount > 0 ? cartproducts.cartTotalAmount + 20 : cartproducts.cartTotalAmount}</h4>
                                     </div>
                                     <div class="d-grid mt-4 px-4">
-                                        <button className="btn btn-primary" type="button">Checkout</button>
+
+                                        {auth._id ? <button className="btn btn-primary hover" type="button">Checkout</button> : <button className='btn btn-warning hover' type="button" onClick={() => navigate("/login")}>Login to Checkout</button>}
+
                                     </div>
 
 

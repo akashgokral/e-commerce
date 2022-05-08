@@ -32,6 +32,11 @@
     height: 100% !important;
 }
 
+.hover:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
+
 @media screen and (max-width:760px) {
     .header {
         display: none !important;

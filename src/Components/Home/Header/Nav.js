@@ -3,14 +3,19 @@ import "../../styles/nav.css"
 import logo from "../../../Images/Web/iSHOP Logo.svg"
 import { Link, NavLink } from 'react-router-dom'
 import { FaUserAlt, FaBriefcase, FaSearch } from "react-icons/fa";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { logoutUser } from "../../../AuthSlice/authSlice"
+import { toast } from 'react-toastify';
 
 
 const Nav = () => {
 
     const [qty, setQty] = useState([]);
 
+    const dispatch = useDispatch();
+
     const cartQty = useSelector((state) => state.cart);
+    const auth = useSelector((state) => state.auth)
 
     useEffect(() => {
         setQty(cartQty);
@@ -25,7 +30,16 @@ const Nav = () => {
             <nav className="navbar navbar-expand-lg navbar-light  sticky-top bg-light">
 
                 <div className="container d-flex flex-lg-column justify-content-between align-items-center">
-                    <Link to="/"> <div className='logo'><img src={logo}></img></div></Link>
+                    <div className='d-flex align-items-center checkout_login_register'>
+                        <Link to="/"> <div className='logo'><img src={logo}></img></div></Link>
+                        <div className='d_left'>  {
+                            auth._id ? <div className='logout' onClick={() => {
+                                dispatch(logoutUser(null));
+                                toast.warning("Logged Out", { position: "bottom-left" })
+                            }}>
+                                Logout</div> : <div className="login_register"><Link to="/login">Login</Link><Link to="/Register">Register</Link></div>
+                        }</div>
+                    </div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -66,6 +80,7 @@ const Nav = () => {
 
                         </ul>
                     </div>
+
                 </div>
             </nav >
 
@@ -76,3 +91,5 @@ const Nav = () => {
 }
 
 export default Nav
+
+

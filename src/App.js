@@ -7,6 +7,8 @@ import Watches from "./Components/Watches/Watches";
 import Macbook from "./Components/Macbook/Macbook";
 import Headfones from "./Components/Headfones/Headfones";
 import Cart from "./Components/Cart/Cart";
+import RegisterForm from './AuthSlice/RegisterForm';
+import LoginForm from './AuthSlice/LoginForm';
 
 
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/macbook" element={<Macbook />} />
         <Route path="/accessories" element={<Headfones />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/login" element={<LoginForm />} />
       </Routes>
 
     </>

@@ -42,6 +42,33 @@
     display: none !important;
 }
 
+.checkout_login_register {
+    width: 100% !important;
+    justify-content: center;
+}
+
+.login_register a {
+    text-decoration: none;
+    font-size: 19px;
+
+}
+
+.logout {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.login_register a:last-child {
+    margin-left: 25px;
+
+}
+
+.d_left {
+    position: absolute;
+    right: 55px;
+
+}
+
 @media screen and (max-width:760px) {
     li.nav-item {
         width: 100%;

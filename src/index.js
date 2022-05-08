@@ -7,7 +7,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { ReduxStore } from "../src/Components/Redux/ReduxStore"
 import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify"
+import { loadUser } from "../src/AuthSlice/authSlice"
 
+
+ReduxStore.dispatch(loadUser(null));
 
 
 ReactDOM.render(
