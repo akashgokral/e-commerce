@@ -45,7 +45,7 @@ const LoginForm = () => {
                 <Header />
             </div>
             <StyledFrom onSubmit={handleSubmit}>
-                <h2>Login</h2>
+                <h2 className='text-center'>Login</h2>
                 <input type="email" placeholder='email' onChange={(e) => setUser({ ...user, email: e.target.value })} />
                 <input type="password" placeholder='password' onChange={(e) => setUser({ ...user, password: e.target.value })} />
                 <button>{auth.loginStatus === "pending" ? 'Submitting' : 'Login'}</button>

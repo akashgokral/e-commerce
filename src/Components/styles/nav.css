@@ -122,4 +122,9 @@
         border: 1px solid black !important;
     }
 
+
+    .checkout_login_register {
+        display: flex;
+        justify-content: space-between !important;
+    }
 }
